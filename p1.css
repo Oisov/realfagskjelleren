@@ -1,75 +1,50 @@
-/* Filename: p1.css
-   Date Modified: 02/28/14
-*/
-
+*{
+	font-family: Georgia, Palantino, serif;
+	padding: 0;
+	margin: 0;
+}
 body {
-
-    width: 780px;
-    margin: 0 auto; /*centers body*/
-    background-color: rgb(0,0,0);
-    font-family: 'Alegreya Sans', sans-serif;
+    width: 50%;
+    margin: auto; 
+    background-color: black;
 }
 
 figure {
     text-align: center;
-    margin: 0 auto; /*centers body*/
+    margin: auto; 
     margin-top: 30px;
     margin-bottom:20px;
 }
 
 section {
     border: 1px dashed;
+	border-radius: 10px;
     color:orange;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom:20px;
+    padding: 30px 30px;
+    margin-top: 25px;
+	margin-bottom: 50px;
 }
 
 header {
-    height: 100px;
-    margin-bottom: 10px;
     margin-top: 40px;
+}
 
+header h2, p, ul, li {
+	color: white;
 }
 
 h1, h2, h3 {
     font-family: 'Flamenco', cursive;
     color: orange;
+	padding-bottom: 15px;
 }
 
 h2 span {
     font-size: small;
 }
 
-h3:before {
+/*Adds a counter to h3 elements inside sections*/
+section > h3:before {
     content: counter(h3counter) ".\0000a0\0000a0";
     counter-increment: h3counter;
-}
-
-p {
-    color:white;
-}
-
-ul {
-    padding-left: 18px;
-    color: white;
-}
-
-li {
-    color: white;
-}
-
-/* It only applies to the list items that are the pages */
-section>ol>li {
-    margin-bottom: 20px;
-}
-
-.title{
-    display: block;
-    margin-bottom: 10px;
-}
-
-footer {
-    margin-top: 100px;
-    font-size: 13px;
 }
