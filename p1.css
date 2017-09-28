@@ -2,13 +2,16 @@
 	font-family: Georgia, Palantino, serif;
 	padding: 0;
 	margin: 0;
+	color: orange;
 }
 body {
     width: 50%;
     margin: auto; 
     background-color: black;
 }
-
+content{
+	line-height: 1.5;
+}
 figure {
     text-align: center;
     margin: auto; 
@@ -19,13 +22,12 @@ figure {
 section {
     border: 1px dashed;
 	border-radius: 10px;
-    color: orange;
     padding: 30px 30px;
     margin-top: 25px;
 	margin-bottom: 50px;
 }
 
-ul li {
+ul li, ol li {
 	list-style-position: inside;
 }
 
@@ -33,22 +35,34 @@ header {
     margin-top: 40px;
 }
 
-header h2, p, ul, li {
+header h2, p, ul, h2 span {
 	color: white;
 }
 
-h1, h2, h3 {
+header h2, header h2 span {
+	line-height: normal;
+}
+
+h1, h2 {
     font-family: Flamenco, cursive;
     color: orange;
 	padding-bottom: 15px;
+}
+h3 {
+	padding-bottom: 15px;
+	padding-top: 15px;
 }
 
 h2 span {
     font-size: small;
 }
 
-/*Adds a counter to h3 elements inside sections*/
-section > h3:before {
-    content: counter(h3counter) ".\0000a0\0000a0";
-    counter-increment: h3counter;
+section:first-child li, section:first-child i {
+	color: white;
+	list-style: none;
+}
+
+section:first-child li::before {
+	content: "• ";
+	color: orange;
 }
