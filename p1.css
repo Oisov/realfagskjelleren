@@ -13,16 +13,20 @@ figure {
     text-align: center;
     margin: auto; 
     margin-top: 30px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 section {
     border: 1px dashed;
 	border-radius: 10px;
-    color:orange;
+    color: orange;
     padding: 30px 30px;
     margin-top: 25px;
 	margin-bottom: 50px;
+}
+
+ul li {
+	list-style-position: inside;
 }
 
 header {
@@ -34,7 +38,7 @@ header h2, p, ul, li {
 }
 
 h1, h2, h3 {
-    font-family: 'Flamenco', cursive;
+    font-family: Flamenco, cursive;
     color: orange;
 	padding-bottom: 15px;
 }
