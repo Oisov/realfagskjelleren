@@ -70,3 +70,20 @@ section:first-child li::before {
 	content: "• ";
 	color: orange;
 }
+
+table, th, td {
+	border: 1px solid orange;
+}
+
+th {
+	font-size: 24px;
+}
+
+table {
+	width: 100%;
+}
+
+.organize li {
+	margin-left: 20px;
+
+}
