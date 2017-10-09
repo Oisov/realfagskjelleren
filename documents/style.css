@@ -4,9 +4,12 @@
 	margin: 0;
 	color: orange;
 }
+p {
+	font-size: 16px;
+}
 body {
     width: 50%;
-    margin: auto; 
+    margin: auto;
     background-color: black;
 }
 content{
@@ -14,7 +17,7 @@ content{
 }
 figure {
     text-align: center;
-    margin: auto; 
+    margin: auto;
     margin-top: 30px;
     margin-bottom: 20px;
 }
