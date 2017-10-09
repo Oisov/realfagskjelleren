@@ -64,6 +64,14 @@ canvas {
     display: block;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: : 8px;
+    max-width: 85%;
+}
+
 section {
     border: 1px dashed;
     border-radius: 10px;
