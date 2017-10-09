@@ -76,12 +76,16 @@ Filename: P2_design.html
             Realfagskjellerens website, as seen in figure 1. Every page is
             reachable from the homepage through a menu on top. We thought this
             structure would minimize the time the user has to spend navigating
-            from one page to the next.
+                from one page to the next.
+
+                Every node in the clique below represents a page on the website. 
             </p>
 
-            <!-- <img src="./img/clique.png" alt="Figure 1: Navigation Structure"> -->
-
-            <canvas id="polygon" width="512" height="512%"></canvas>
+            <!-- <img src="./img/clique.png" alt="figure 1: navigation structure"> -->
+            <figure>
+                <canvas id="polygon" width="512" height="512%"></canvas>
+                <figcaption>Figure1: The navigation structure of the website (clique) </figcaption>
+            </figure>
 
             <ol id="poly"
                 data-font-size=25
@@ -91,17 +95,18 @@ Filename: P2_design.html
                 data-line-color="#F80"
                 data-start-angle="-90"
                 data-font="Computer Modern">
-                <!-- <li>Home</li> -->
-                <li>Map</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li>Hjem</li>
+                <li>Om oss</li>
+                <li>Kalender</li>
+                <li>Kart</li>
                 <li>Media</li>
-                <li>Guestbook</li>
-                <li>Events</li>
-                <li>Games</li>
+                <li>Spill</li>
             </ol>
 
             <script src="./polygon.js"></script>
+
+            <p> The clique for the mobile website will be similar to the one above.
+            </p>
 
         </section>
 
@@ -125,7 +130,7 @@ Filename: P2_design.html
 
                 <img src="./mockups/pagelayoutalt.png" style="width: auto: height: auto:
         max-width: 800px; max-height: 550px; border: 1px solid orange;
-        margin-top: 15px;" alt="Logo for Realfagskjelleren">
+        margin-left: -20px; margin-top: 15px;" alt="Logo for Realfagskjelleren">
 
                 <!-- TODO: fargevalg, "skillevegger" -->
                 <h3>
@@ -152,9 +157,6 @@ Filename: P2_design.html
                 <img src="./mockups/navbar_hover.png" style="width: auto: height: auto:
         max-width: 800px; max-height: 550px; padding-top: 10px;" alt="Logo for
         Realfagskjelleren">
-
-                <p>To be mobile friendly we decided to use semi-large buttons
-                for smaller screensizes.</p>
 
                 <!-- TODO: font-size -->
                 <h3>
@@ -198,17 +200,29 @@ Filename: P2_design.html
             <h2>Content</h2>
 
             <ol>
-                <li> Homepage.html </li>
+                <li> index.html - <i>Hjem</i> </li>
+                <p> This will be the first page that appears when the user
+                visits the page. This will be a clean page where the only
+                content is the header and a short list of
+                future events with a link to the facebook-event, and opening
+                hours.
+
+                This page can be reached by clicking the logo at the top of the
+                site. </p>
+
+                <li> About.html - <i>Om oss</i> </li>
                 <p> </p>
-                <li> Contact.html </li>
+
+                <li> Events.html - <i>Kalender</i> </li>
                 <p> </p>
-                <li> Events.html </li>
+
+                <li> Map.html - <i>Kart</i> </li>
                 <p> </p>
-                <li> Map.html </li>
+
+                <li> Media.html - <i>Media</i> </li>
                 <p> </p>
-                <li> Pictures.html </li>
-                <p> </p>
-                <li> Games.html </li>
+
+                <li> Games.html - <i>Spill</i> </li>
                 <p> </p>
                 <ol>
 
@@ -216,14 +230,35 @@ Filename: P2_design.html
 
         <section>
 
-            <h2>Minimum Requirements</h2>
+            <h2>Javascript Applications</h2>
 
             <!-- TODO:  -->
             <ul>
-                <li>games_finn_toeren.js</li>
-                <li>games_4chan.js</li>
-                <li>games_terning.js</li>
+                <li>NavigationBar.js</li>
+                Especially when viewing the site on mobile the navigation bar
+            script will be important. This will provide a simple dropdown menu
+                that will work as the navigation bar.
+
+                The dropbown menu will give the user more realstate to view the
+                sites contents. 
+                <li>Games
+                    <ul>
+                        <li>games_finn_toeren.js</li>
+                        <li>games_4chan.js</li>
+                        <li>games_terning.js</li>
+                    </ul>
+                </li>
+
                 <li>events.js</li>
+                This is perhaps the most challenging script to write. We need
+            use Facebook's API to scrobble information about Realfagskjellerens
+                future events.
+
+                <li>thumbnails.js</li>
+                For the images on Realfagskjellerens media page it is desirable
+            to be able to expand the images. As this task can be handled both by
+            webkit and jQuery we are unsure if Javascript is the tool we will
+            use. 
             </ul>
 
         </section>
