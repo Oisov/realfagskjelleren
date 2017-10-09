@@ -8,482 +8,447 @@ Filename: P2_design.html
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>P2 Design Guidelines</title>
-    <link href="./style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="./img/favicon.ico">
+  <meta charset="utf-8">
+  <title>P2 Design Guidelines</title>
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="./img/favicon.ico">
 </head>
 
 <body>
 
-    <header>
-        <h1>P2 Design Guidelines</h1>
-        <h2>Knut Nergård, Jørgen Haslum Lehne, Simon Andre Solheim, Øistein Søvik
+  <header>
+    <h1>P2 Design Guidelines</h1>
+    <h2>Knut Nergård, Jørgen Haslum Lehne, Simon Andre Solheim, Øistein Søvik
             <br>
             <span>October 9, 2017</span></h2>
-    </header>
+  </header>
 
-    <content>
-        <section>
-            <h2>Administrative Details</h2>
+  <content>
+    <section>
+      <h2>Administrative Details</h2>
+      <ul>
+        <li>Client Name: <i> Realfagskjelleren </i></li>
+        <li>Contact Person: <i> Andreas F. Eikeland, the leader of
+          Realfagskjelleren</i></li>
+      </ul>
 
-            <ul>
-                <li>Client Name: <i> Realfagskjelleren </i></li>
+      <figure>
+        <img src="./img/dame3.png" style="width: auto: height: auto: max-width:
+        150px; max-height: 150px" alt="Logo for Realfagskjelleren">
+        <figcaption>The current logo of Realfagskjelleren</figcaption>
+      </figure>
 
-                <li>Contact Person: <i> Andreas F. Eikeland, the leader of
-        Realfagskjelleren</i></li>
-            </ul>
-
-            <figure>
-                <img src="./img/dame3.png" style="width: auto: height: auto: max-width:
-     150px; max-height: 150px" alt="Logo for Realfagskjelleren">
-                <figcaption>The current logo of Realfagskjelleren</figcaption>
-            </figure>
-
-        </section>
+      </section>
 
 
-        <section>
+      <section>
 
-            <h2>Purpose, Goals and Audience</h2>
+        <h2>Purpose, Goals and Audience</h2>
 
-            <p>The purpose of the website is to serve as a informationhub for
-            Realfagskjelleren. Its main goal is to accessibly provide answers to
-            questions students might have about Realfagskjelleren, and secondly
-            also promote Realfagskjelleren and its interests, where the targeted
-            audience of this is mainly students.
+        <p>The purpose of the website is to serve as an informationhub for
+        Realfagskjelleren. Its main goal is to accessibly provide answers to
+        questions students might have about Realfagskjelleren, and secondly also
+        promote Realfagskjelleren and its interests, where the targeted audience
+        of this is mainly students. More specifically Realfagskjelleren wants a
+        quick and simple way to view future events. The primary communication
+        channel for Realfagskjelleren is Facebook and this needs to be reflected
+        on the site. We want, if possible, to be able to fetch events from their
+        facebook page. While facebook can be great, it is quite cluttered for
+        the user to find the neccecary information. The purpose of the website
+        is to bridge this gap, providing the information to the user in the
+        cleanest matter possible.</p>
 
-                More specifically Realfagskjelleren wants a quick and simple way
-                to view future events. The primary communication channel for
-                Realfagskjelleren is Facebook and this needs to be reflected on
-                the site. We want if possible to be able to fetch events from
-                their facebook page. While facebook can be great, it is quite
-                cluttered for the user to find the neccecary information. The
-                purpose of the website is to bridge this gap, providing the
-                information to the user in the cleanest matter possible.</p>
+      </section>
 
-        </section>
+      <section>
 
-        <section>
+        <h2>Navigation Structure</h2>
 
-            <h2>Navigation Structure</h2>
+        <!-- TODO: figureringsnummer på bilder? -->
+        <p> We choose a clique based structure for the navigation of
+        Realfagskjellerens website, as seen in figure 1. Every page is reachable
+        from the homepage through a menu on top. We thought this structure would
+        minimize the time the user has to spend navigating from one page to the
+        next. Every node in the clique below represents a page on the
+        website.</p>
 
-            <!-- TODO: figureringsnummer på bilder? -->
-            <p> We choose a clique based structure for the navigation of
-            Realfagskjellerens website, as seen in figure 1. Every page is
-            reachable from the homepage through a menu on top. We thought this
-            structure would minimize the time the user has to spend navigating
-            from one page to the next.
+        <!-- <img src="./img/clique.png" alt="figure 1: navigation structure"> -->
+        <figure>
+        <!-- <canvas id="polygon" -->
+        <!-- width="512" -->
+        <!-- height="512%"></canvas> -->
+        <img src="./img/clique_norsk.png" alt="figure 1: navigation structure">
+          <figcaption>
+            Figure1: The navigation structure of the website (clique)
+          </figcaption>
+        </figure>
 
-                Every node in the clique below represents a page on the website. 
+        <ol id="poly"
+          data-font-size=25
+          data-line-width=256
+          data-line-dash=5
+          data-text-color="white"
+          data-line-color="#F80"
+          data-start-angle="-90"
+          data-font="Computer Modern">
+          <li>Hjem</li>
+          <li>Om oss</li>
+          <li>Kalender</li>
+          <li>Kart</li>
+          <li>Media</li>
+          <li>Spill</li>
+        </ol>
+
+        <script src="./polygon.js"></script>
+
+        <p> The clique for the mobile website will be similar to the one above.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>Page Layout and Appearance</h2>
+        <ul>
+          <h3>
+            <li>General page layout</li>
+          </h3>
+          <!-- TODO: størrelser på margin, banner og navbar -->
+          <p>All our different html pages will be built in a similar fashion. On
+          the right and left side there will be margins each taking 20% of the
+          webpage width. At the top, centered within the margins, we will have a
+          custom made banner for Realfagskjelleren. Directly beneath the banner
+          we have a navbar, also centered within the margins. The remaining
+          place on the page is where the specific content for each site will be.
+          The following mockup image illustrates the general layout. Note the
+          footer containing contact information. This will be the standard
+          footer used throughout the website (even though it's not included in
+          the other mockups).</p>
+
+          <figure>
+      			<img src="./mockups/pagelayout_basic_footer.png" alt="Logo for
+      			Realfagskjelleren">
+      			<figcaption>Figure2: Basic website layout with universal
+      					footer.</figcaption>
+      		</figure>
+
+          <!-- TODO: fargevalg, "skillevegger" -->
+          <h3>
+            <li>Navbar</li>
+          </h3>
+
+      		<figure>
+      			<img src="./mockups/navbar.png" alt="Logo for Realfagskjelleren">
+      		</figure>
+
+          <p>The navigation bar consists of six elements as shown in the mockup
+          image above. Each element has a black background, orange font color
+          and a border between eachother to visually show the seperation. To
+          show which of the navbar pages we're currently viewing, the background
+          color of the active page in the navbar is made green:</p>
+
+      		<figure>
+      			<img src="./mockups/navbar_active.png" alt="Logo for
+      			Realfagskjelleren">
+      		</figure>
+
+          <p>In addition to a permanent background color on the active page, the
+          color changes when we hover over a non-active page in the navbar:</p>
+
+      		<figure>
+      			<img src="./mockups/navbar_hover.png" alt="Logo for
+      			Realfagskjelleren">
+      		</figure>
+
+          <!-- TODO: font-size -->
+          <h3>
+            <li>Fonts</li>
+          </h3>
+          <p> We decided to go for Georgia as our main font, while our figures
+          and paragraphs use Computer Modern. For both fonts we use Sans-serif
+          as our fallback font. When it comes to font size, we use 40px for the
+          main title, 20px for the navbar, and 14px for the body. </p>
+
+          <h3>
+            <li>Color Scheme and links</li>
+          </h3>
+
+          <p>The official color scheme for Realfagskjellern is orange and black.
+          To somewhat recreate the feeling of visiting Realfagskjelleren we mix
+          in some black and dark colors. Apart from the links used for the
+          navbar, all the links we use will be orange, underlined and change
+          color to blue on hover. The links in the navbar will not have any
+          further visual effects other than what was described in the navbar
+          section.</p>
+
+          <h3>
+            <li>Shadows and Borders</li>
+          </h3>
+
+          <p>In the media section of the website there will be several images
+          and videos displayed in thumbnail size. clicking an image will bring
+          up a larger version of that image, leaving the rest of the gallery in
+          shadow. In addition, every image in the gallery is enclosed in a small
+          border. </p>
+
+        </ul>
+
+      </section>
+
+      <section>
+
+        <h2>Content</h2>
+
+          <ol>
+            <li> index.html - <i>Hjem</i> </li>
+            <p> This will be the first page that appears when the user visits
+            the page. This will be a clean page where the only content is the
+            header and a short list of future events with a link to the
+            facebook-event, and opening hours. This page can be reached by
+            clicking the logo at the top of the site. </p>
+
+				    <figure>
+					    <img src="./mockups/pagelayout_home.png" alt="Hjem">
+					    <figcaption>Figure3: Mockup of homepage.</figcaption>
+				    </figure>
+
+            <li> about.html - <i>Om oss</i> </li>
+            <p>This will include a short paragraph about what Reaflagskjelleren
+            is. This will be divided into a brief historic overview, how to book
+            Realfagskjelleren, and inform about lost and found. </p>
+
+				    <figure>
+					    <img src="./mockups/pagelayout_about.png" alt="Om oss">
+					    <figcaption>Figure4: Mockup of the about page.</figcaption>
+				    </figure>
+
+            <li> events.html - <i>Kalender</i> </li>
+            <p> This page will provide a list of the future events of
+            Realfagskjelleren. While not displayed properly in Figure: 4 we are
+            still working on how to design the list of events. </p>
+
+				    <figure>
+					    <img src="./mockups/pagelayout_calendar.png" alt="Kalender">
+					    <figcaption>Figure5: Mockup of the calendar page.</figcaption>
+				    </figure>
+
+            <li> map.html - <i>Kart</i> </li>
+            <p> This will display an embedded google maps displaying where
+            Realfagskjelleren is. This will be especially important in the
+            following months as Realfagskjelleren is moving.</p>
+
+				    <figure>
+					    <img src="./mockups/pagelayout_map.png" alt="Kart">
+					    <figcaption>Figure6: Mockup of the map page.</figcaption>
+				    </figure>
+
+            <li> media.html - <i>Media</i> </li>
+            <p> Just a simple presentation of images related to
+            Realfagskjelleren. If clicked upon the images should be enlarged, as
+            describer earlier in the document. If we end up with a lot of free
+            time on our hands we might be able to scrobble instagram for images.
             </p>
 
-            <!-- <img src="./img/clique.png" alt="figure 1: navigation structure"> -->
-            <figure>
-                <!-- <canvas id="polygon" -->
-                <!-- width="512" -->
-                <!-- height="512%"></canvas> -->
-                <img src="./img/clique_norsk.png" alt="figure 1: navigation structure">
-                <figcaption>
-                    Figure1: The navigation structure of the website (clique)
-                </figcaption>
-            </figure>
+				    <figure>
+              <img src="./mockups/pagelayout_media.png" alt="Media">
+					    <figcaption>Figure7: Mockup of the media page.</figcaption>
+				    </figure>
 
-            <ol id="poly"
-                data-font-size=25
-                data-line-width=256
-                data-line-dash=5
-                data-text-color="white"
-                data-line-color="#F80"
-                data-start-angle="-90"
-                data-font="Computer Modern">
-                <li>Hjem</li>
-                <li>Om oss</li>
-                <li>Kalender</li>
-                <li>Kart</li>
-                <li>Media</li>
-                <li>Spill</li>
-            </ol>
+            <li> games.html - <i>Spill</i> </li>
+            <p>A section containing interactive games related to
+            Reaflagskjelleren. Users </p>
 
-            <script src="./polygon.js"></script>
+				    <figure>
+					    <img src="./mockups/pagelayout_games.png" alt="Spill">
+					    <figcaption>Figure8: Mockup of the games page.</figcaption>
+				    </figure>
 
-            <p> The clique for the mobile website will be similar to the one
-            above.
-            </p>
-
-        </section>
-
-
-        <section>
-
-            <h2>Page Layout and Appearance</h2>
-            <ul>
-                <h3>
-                    <li>General page layout</li>
-                </h3>
-                <!-- TODO: størrelser på margin, banner og navbar -->
-                <p>All our different html pages will be built in a similar
-                fashion. On the right and left side there will be margins each
-                taking 20% of the webpage width. At the top, centered within the
-                margins, we will have a custom made banner for
-                Realfagskjelleren. Directly beneath the banner we have a navbar,
-                also centered within the margins. The remaining place on the
-                page is where the specific content for each site will be. The
-                following mockup image illustrates the general layout. Note the 
-				footer containing contact information. This will be the standard
-				footer used throughout the website (even though it's not included
-				in the other mockups).</p>
-				<figure>
-					<img src="./mockups/pagelayout_basic_footer.png"
-						 alt="Logo for Realfagskjelleren">
-					<figcaption>Figure2: Basic website layout with universal footer.</figcaption>
-				</figure>
-
-                <!-- TODO: fargevalg, "skillevegger" -->
-                <h3>
-                    <li>Navbar</li>
-                </h3>
-				
-				<figure>
-					<img src="./mockups/navbar.png"
-						 alt="Logo for Realfagskjelleren">
-				</figure>
-
-                <p>The navigation bar consists of six elements as shown in the
-                mockup image above. Each element has a black background, orange
-                font color and a border between eachother to visually show the
-                seperation. To show which of the navbar pages we're currently
-                viewing, the background color of the active page in the navbar
-                is made green:</p>
-				
-				<figure>
-					<img src="./mockups/navbar_active.png"
-						 alt="Logo for Realfagskjelleren">
-				</figure>
-
-                <p>In addition to a permanent background color on the active
-                page, the color changes when we hover over a non-active page in
-                the navbar:</p>
-
-				<figure>
-					<img src="./mockups/navbar_hover.png"
-						 alt="Logo for Realfagskjelleren">
-				</figure>
-
-                <!-- TODO: font-size -->
-                <h3>
-                    <li>Fonts</li>
-                </h3>
-                <p> We decided to go for Georgia as our main font, while our
-                figures and paragraphs use Computer Modern. For both fonts we
-                use Sans-serif as our fallback font. When it comes to font size,
-                we use 40px for the main title, 20px for the navbar, and 14px
-                for the body. </p>
-
-                <h3>
-                    <li>Color Scheme and links</li>
-                </h3>
-
-                <p>The official color scheme for Realfagskjellern is orange and black. To
-                somewhat recreate the feeling of visiting Realfagskjelleren we
-                mix in some black and dark colors. Apart from the links used for
-                the navbar, all the links we use will be orange, underlined and
-                change color to blue on hover. The links in the navbar will not
-                have any further visual effects other than what was described in
-                the navbar section.</p>
-
-                <h3>
-                    <li>Shadows and Borders</li>
-                </h3>
-
-                <p>In the media section of the website there will be several
-                images and videos displayed in thumbnail size. clicking an image
-                will bring up a larger version of that image, leaving the rest
-                of the gallery in shadow. In addition, every image in the
-                gallery is enclosed in a small border.
-                </p>
-
-            </ul>
+          </ol>
 
         </section>
 
         <section>
 
-            <h2>Content</h2>
+          <h2>Javascript Applications</h2>
 
-            <ol>
-                <li> index.html - <i>Hjem</i> </li>
-                <p> This will be the first page that appears when the user
-                visits the page. This will be a clean page where the only
-                content is the header and a short list of
-                future events with a link to the facebook-event, and opening
-                hours.
+          <!-- TODO:  -->
+          <ul>
 
-                This page can be reached by clicking the logo at the top of the
-                site. </p>
-				
-				<figure>
-					<img src="./mockups/pagelayout_home.png"
-						 alt="Hjem">
-					<figcaption>Figure3: Mockup of homepage.</figcaption>
-				</figure>
+            <li>NavigationBar.js</li>
 
-                <li> about.html - <i>Om oss</i> </li>
-                <p>This will include a short paragraph about what
-                Reaflagskjelleren is. This will be divided into a brief historic
-                overview, how to book Realfagskjelleren, and inform about lost
-                and found. </p>
-				
-				<figure>
-					<img src="./mockups/pagelayout_about.png"
-						 alt="Om oss">
-					<figcaption>Figure4: Mockup of the about page.</figcaption>
-				</figure>
-
-                <li> events.html - <i>Kalender</i> </li>
-                <p> This page will provide a list of the future events of
-                Realfagskjelleren. While not displayed properly in Figure: 4 we
-                are still working on how to design the list of events. </p>
-				
-				<figure>
-					<img src="./mockups/pagelayout_calendar.png"
-						 alt="Kalender">
-					<figcaption>Figure5: Mockup of the calendar page.</figcaption>
-				</figure>
-
-                <li> map.html - <i>Kart</i> </li>
-                <p> This will display an embedded google maps displaying where
-                Realfagskjelleren is. This will be especially important in the
-                following months as Realfagskjelleren is moving.</p>
-				
-				<figure>
-					<img src="./mockups/pagelayout_map.png"
-						 alt="Kart">
-					<figcaption>Figure6: Mockup of the map page.</figcaption>
-				</figure>
-
-                <li> media.html - <i>Media</i> </li>
-                <p> Just a simple presentation of images related to
-                Realfagskjelleren. If clicked upon the images should be
-                enlarged, as describer earlier in the document. 
-				If we end up with a lot of free time on our hands we
-                might be able to scrobble instagram for images. </p>
-				
-				<figure>
-					<img src="./mockups/pagelayout_media.png"
-						 alt="Media">
-					<figcaption>Figure7: Mockup of the media page.</figcaption>
-				</figure>
-
-                <li> games.html - <i>Spill</i> </li>
-                <p>A section containing interactive games related to
-				Reaflagskjelleren. Users </p>
-				
-				<figure>
-					<img src="./mockups/pagelayout_games.png"
-						 alt="Spill">
-					<figcaption>Figure8: Mockup of the games page.</figcaption>
-				</figure>
-                <ol>
-
-        </section>
-
-        <section>
-
-            <h2>Javascript Applications</h2>
-
-            <!-- TODO:  -->
-            <ul>
-                <li>NavigationBar.js</li>
-                Especially when viewing the site on mobile the navigation bar
+            <p> Especially when viewing the site on mobile the navigation bar
             script will be important. This will provide a simple dropdown menu
-                that will work as the navigation bar.
+            that will work as the navigation bar. The dropbown menu will give
+            the user more realstate to view the sites contents.</p>
 
-                The dropbown menu will give the user more realstate to view the
-                sites contents.
-                <li>Games
-                    <ul class="organize">
-                        <li>games_finn_toeren.js</li>
-                        One of the simpler games Realfagskjelleren has to offer.
-                        The purpose of this game is to find the one hidden 2 in
-                        a standard deck.
-                        <li>games_4chan.js</li>
-						A traditional card game based on the infamous website 4chan.
-                        <li>games_terning.js</li>
-						A game based on the loaded dice used in Ludøl.
-                    </ul>
-                </li>
+            <li>Games
+              <ul class="organize">
+                <li>games_finn_toeren.js</li>
 
-                <li>events.js</li>
-                This is perhaps the most challenging script to write. We need
-                use Facebook's API to scrobble information about
-                Realfagskjellerens future events.
+                <p>One of the simpler games Realfagskjelleren has to offer. The
+                purpose of this game is to find the one hidden 2 in a standard
+                deck.</p>
 
-                <li>thumbnails.js</li>
-                For the images on Realfagskjellerens media page it is desirable
-                to be able to expand the images. As this task can be handled
-                both by webkit and jQuery we are unsure if Javascript is the
-                tool we will use.
+                <li>games_4chan.js</li>
+                <p> A traditional card game based on the infamous website
+                4chan.</p>
 
-            </ul>
+                <li>games_terning.js</li>
+                <p>A game based on the loaded dice used in Ludøl.</p>
+
+              </ul>
+            </li>
+
+            <li>events.js</li>
+
+            <p> This is perhaps the most challenging script to write. We need
+            use Facebook's API to scrobble information about Realfagskjellerens
+            future events.</p>
+
+            <li>thumbnails.js</li>
+
+            <p>For the images on Realfagskjellerens media page it is desirable
+            to be able to expand the images. As this task can be handled both by
+            webkit and jQuery we are unsure if Javascript is the tool we will
+            use.</p>
+
+          </ul>
 
         </section>
 
         <section>
 
-            <h2>Plan</h2>
+          <h2>Plan</h2>
 
-            <h3> Organizational Scheme
-                <h3>
-                    <ul>
-                        <li>homepage.html</li>
-                        <li>events.html</li>
-                        <li>map.html</li>
-                        <li>pictures.html</li>
-                        <li>contact.html</li>
-                        <li>games.html</li>
-                        <li>style.css</li>
-                        <li>js/
-                            <ul class="organize">
+          <h3> Organizational Scheme</h3>
+
+          <ul>
+            <li>homepage.html</li>
+            <li>events.html</li>
+            <li>map.html</li>
+            <li>pictures.html</li>
+            <li>contact.html</li>
+            <li>games.html</li>
+            <li>style.css</li>
+            <li>js/
+              <ul class="organize">
 								<li>NavigationBar.js</li>
-                                <li>games_finn_toeren.js</li>
-                                <li>games_4chan.js</li>
-                                <li>games_terning.js</li>
-                                <li>events.js</li>
+                <li>games_finn_toeren.js</li>
+                <li>games_4chan.js</li>
+                <li>games_terning.js</li>
+                <li>events.js</li>
 								<li>thumbnails.js</li>
-                            </ul>
-                        </li>
-                        <li>img/
-                            <ul class="organize">
-                                <!-- TODO: hvilke bilder -->
-                                <li>Pictures related to Reaflagskjelleren</li>
-                            </ul>
-                        </li>
-                    </ul>
+              </ul>
+            </li>
 
-                    <h3>Work Division and Deadlines
-                        <h3>
-                            <table>
-                                <tr>
-                                    <th>Filename</th>
-                                    <th>Description</th>
-                                    <th>Responsible</th>
-                                    <th>Deadline</th>
-                                </tr>
-                                <tr>
-                                    <td>index.html</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-								<tr>
-                                    <td>about.html</td>
-                                    <td></td>
-                                    <td>øistein</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>calendar.html</td>
-                                    <td></td>
-                                    <td>øistein, Knut</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>map.html</td>
-                                    <td></td>
-                                    <td>Jørgen</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>media.html</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>guestbook.html</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>games.html</td>
-                                    <td></td>
-                                    <td>Simon</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>NavigationBar.js</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>games_finn_toeren.js</td>
-                                    <td></td>
-                                    <td>Simon</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>games_4chan.js</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>games_terning.js</td>
-                                    <td></td>
-                                    <td>Jørgen</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>events.js</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-								<tr>
-                                    <td>thumbnails.js</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-								<tr>
-                                    <td>footer.html</td>
-                                    <td></td>
-                                    <td>Knut</td>
-                                    <td></td>
-                                </tr>
-                            </table>
+            <li>img/
+              <ul class="organize">
+              <!-- TODO: hvilke bilder -->
+                <li>Pictures related to Reaflagskjelleren</li>
+              </ul>
+            </li>
+          </ul>
 
-                            <!--
-<ol>
-<li> Homepage.html </li>
-<li> Contact.html </li>
-<li> Events.html </li>
-<li> Map.html </li>
-<li> Pictures.html </li>
-<li> Games.html </li>
-	<ol>
-<li> “Finn toeren” </li>
-<li> 4 chan </li>
-<li> Terning </li>
-</ol>
-<li> Scripts </li>
-<ol>
-<li> Map.js </li>
-<li> games_finn_toeren.js </li>
-<li> games_4chan.js </li>
-<li> games_terning.js </li>
-<li> events.js </li>
-</ol>
--->
+          <h3>Work Division and Deadlines </h3>
 
-
-        </section>
+          <table>
+            <tr>
+              <th>Filename</th>
+              <th>Description</th>
+              <th>Responsible</th>
+              <th>Deadline</th>
+            </tr>
+            <tr>
+              <td>index.html</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>about.html</td>
+              <td></td>
+              <td>øistein</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>calendar.html</td>
+              <td></td>
+              <td>øistein, Knut</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>map.html</td>
+              <td></td>
+              <td>Jørgen</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>media.html</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>guestbook.html</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>games.html</td>
+              <td></td>
+              <td>Simon</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>NavigationBar.js</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>games_finn_toeren.js</td>
+              <td></td>
+              <td>Simon</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>games_4chan.js</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>games_terning.js</td>
+              <td></td>
+              <td>Jørgen</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>events.js</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>thumbnails.js</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>footer.html</td>
+              <td></td>
+              <td>Knut</td>
+              <td></td>
+            </tr>
+          </table>
+          
+      </section>
     </content>
 
-</body>
+  </body>
 
 
 </html>
