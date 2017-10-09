@@ -8,294 +8,336 @@ Filename: P2_design.html
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>P2 Design Guidelines</title>
-  <link href="./style.css" rel="stylesheet" type="text/css">
-  <link rel="icon" href="./img/favicon.ico">
+    <meta charset="utf-8">
+    <title>P2 Design Guidelines</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="./img/favicon.ico">
 </head>
 
 <body>
 
-  <header>
-    <h1>P2 Design Guidelines</h1>
-    <h2>Knut Nergård, Jørgen Haslum Lehne, Simon Andre Solheim, Øistein
-      Søvik<br>
-      <span>October 9, 2017</span></h2>
-  </header>
+    <header>
+        <h1>P2 Design Guidelines</h1>
+        <h2>Knut Nergård, Jørgen Haslum Lehne, Simon Andre Solheim, Øistein Søvik
+            <br>
+            <span>October 9, 2017</span></h2>
+    </header>
 
-  <content>
-    <section>
-      <h2>Administrative Details</h2>
+    <content>
+        <section>
+            <h2>Administrative Details</h2>
 
-      <ul>
-        <li>Client Name: <i> Realfagskjelleren </i></li>
+            <ul>
+                <li>Client Name: <i> Realfagskjelleren </i></li>
 
-        <li>Contact Person: <i> Andreas F. Eikeland, the leader of
+                <li>Contact Person: <i> Andreas F. Eikeland, the leader of
         Realfagskjelleren</i></li>
-      </ul>
+            </ul>
 
-      <figure>
-        <img src="./img/dame3.png" style="width: auto: height: auto: max-width:
+            <figure>
+                <img src="./img/dame3.png" style="width: auto: height: auto: max-width:
      150px; max-height: 150px" alt="Logo for Realfagskjelleren">
-        <figcaption>The current logo of Realfagskjelleren</figcaption>
-      </figure>
+                <figcaption>The current logo of Realfagskjelleren</figcaption>
+            </figure>
 
-    </section>
-
-
-    <section>
-
-      <h2>Purpose, Goals and Audience</h2>
-
-      <p>The purpose of the website is to serve as a informationhub for
-      Realfagskjelleren. Its main goal is to accessibly provide answers to
-      questions students might have about Realfagskjelleren, and secondly also
-      promote Realfagskjelleren and its interests. The targeted audience of this
-      is mainly students</p>
-
-    </section>
+        </section>
 
 
-    <section>
+        <section>
 
-      <h2>Navigation Structure</h2>
+            <h2>Purpose, Goals and Audience</h2>
 
-      <!-- TODO: figureringsnummer på bilder? -->
-      <p> We choose a clique based structure for the navigation of
-      Realfagskjellerens website, as seen in figure 1. Every page is reachable
-      from the homepage through a menu on top. We thought this structure would
-      minimize the time the user has to spend navigating from one page to the
-      next.</p>
+            <p>The purpose of the website is to serve as a informationhub for
+                Realfagskjelleren. Its main goal is to accessibly provide
+                answers to questions students might have about
+                Realfagskjelleren, and secondly also promote Realfagskjelleren
+                and its interests. The targeted audience of this is mainly
+                students</p>
 
-      <img src="./img/clique.png" alt="Figure 1: Navigation Structure">
-
-    </section>
+        </section>
 
 
-    <section>
+        <section>
 
-      <h2>Page Layout and Appearance</h2>
-      <ul>
-        <h3><li>General page layout</li></h3>
-        <!-- TODO: størrelser på margin, banner og navbar -->
-        <p>All our different html pages will be built in a similar fashion. On
-        the right and left side there will be margins each taking 20% of the
-        webpage width. At the top, centered within the margins, we will have a
-        custom made banner for Realfagskjelleren. Directly beneath the banner we
-        have a navbar, also centered within the margins. The remaining place on
-        the page is where the specific content for each site will be. The
-        following mockup image illustrates the general layout</p>
+            <h2>Navigation Structure</h2>
 
-        <img src="./mockups/pagelayoutalt.png" style="width: auto: height: auto:
+            <!-- TODO: figureringsnummer på bilder? -->
+            <p> We choose a clique based structure for the navigation of
+            Realfagskjellerens website, as seen in figure 1. Every page is
+            reachable from the homepage through a menu on top. We thought this
+            structure would minimize the time the user has to spend navigating
+            from one page to the next.
+            </p>
+
+            <!-- <img src="./img/clique.png" alt="Figure 1: Navigation Structure"> -->
+
+            <canvas id="polygon" width="512" height="512%"></canvas>
+
+            <ol id="poly"
+                data-font-size=25
+                data-line-width=256
+                data-line-dash=5
+                data-text-color="white"
+                data-line-color="#F80"
+                data-start-angle="-90"
+                data-font="Computer Modern">
+                <!-- <li>Home</li> -->
+                <li>Map</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Media</li>
+                <li>Guestbook</li>
+                <li>Events</li>
+                <li>Games</li>
+            </ol>
+
+            <script src="./polygon.js"></script>
+
+        </section>
+
+
+        <section>
+
+            <h2>Page Layout and Appearance</h2>
+            <ul>
+                <h3>
+                    <li>General page layout</li>
+                </h3>
+                <!-- TODO: størrelser på margin, banner og navbar -->
+                <p>All our different html pages will be built in a similar
+                fashion. On the right and left side there will be margins each
+                taking 20% of the webpage width. At the top, centered within the
+                margins, we will have a custom made banner for
+                Realfagskjelleren. Directly beneath the banner we have a navbar,
+                also centered within the margins. The remaining place on the
+                page is where the specific content for each site will be. The
+                following mockup image illustrates the general layout</p>
+
+                <img src="./mockups/pagelayoutalt.png" style="width: auto: height: auto:
         max-width: 800px; max-height: 550px; border: 1px solid orange;
         margin-top: 15px;" alt="Logo for Realfagskjelleren">
 
-        <!-- TODO: fargevalg, "skillevegger" -->
-        <h3><li>Navbar</li></h3>
-        <img src="./mockups/navbar.png" style="width: auto: height: auto:
+                <!-- TODO: fargevalg, "skillevegger" -->
+                <h3>
+                    <li>Navbar</li>
+                </h3>
+                <img src="./mockups/navbar.png" style="width: auto: height: auto:
         max-width: 800px; max-height: 550px;" alt="Logo for Realfagskjelleren">
 
-        <p>The navigation bar consists of six elements as shown in the mockup
-        image above. Each element has a black background, orange font color and
-        a border between eachother to visually show the seperation. To show
-        which of the navbar pages we're currently viewing, the background color
-        of the active page in the navbar is made green.</p>
+                <p>The navigation bar consists of six elements as shown in the
+                mockup image above. Each element has a black background, orange
+                font color and a border between eachother to visually show the
+                seperation. To show which of the navbar pages we're currently
+                viewing, the background color of the active page in the navbar
+                is made green.</p>
 
-        <img src="./mockups/navbar_active.png" style="width: auto: height: auto:
+                <img src="./mockups/navbar_active.png" style="width: auto: height: auto:
         max-width: 800px; max-height: 550px; padding-top: 10px;" alt="Logo for
         Realfagskjelleren">
 
-        <p>In addition to a permanent background color on the active page, the
-        color changes when we hover over a non-active page in the navbar</p>
+                <p>In addition to a permanent background color on the active
+                page, the color changes when we hover over a non-active page in
+                the navbar</p>
 
-        <img src="./mockups/navbar_hover.png" style="width: auto: height: auto:
+                <img src="./mockups/navbar_hover.png" style="width: auto: height: auto:
         max-width: 800px; max-height: 550px; padding-top: 10px;" alt="Logo for
         Realfagskjelleren">
 
-        <p>To be mobile friendly we decided to use semi-large buttons for
-        smaller screensizes.</p>
+                <p>To be mobile friendly we decided to use semi-large buttons
+                for smaller screensizes.</p>
 
-        <!-- TODO: font-size -->
-        <h3><li>Fonts</li></h3>
-        <p> We decided to go for Georgia as our main font, while our figures and
-        paragraphs use Computer Modern. For both fonts we use Sans-serif as our
-        fallback font. When it comes to font size, we use 40px for the main
-        title, 20px for the navbar, and 14px for the body </p>
+                <!-- TODO: font-size -->
+                <h3>
+                    <li>Fonts</li>
+                </h3>
+                <p> We decided to go for Georgia as our main font, while our
+                figures and paragraphs use Computer Modern. For both fonts we
+                use Sans-serif as our fallback font. When it comes to font size,
+                we use 40px for the main title, 20px for the navbar, and 14px
+                for the body </p>
 
-        <h3><li>Color Scheme and links</li></h3>
+                <h3>
+                    <li>Color Scheme and links</li>
+                </h3>
 
-        <p>The official color scheme for Realfagskjellern is orange. To somewhat
-        recreate the feeling of visiting Realfagskjelleren we mix in some black
-        and dark colors. Apart from the links used for the navbar, all the links
-        we use will be orange, underlined and change color to blue on hover. The
-        links in the navbar will not have any further visual effects other than
-        what was described in the navbar section</p>
+                <p>The official color scheme for Realfagskjellern is orange. To
+                somewhat recreate the feeling of visiting Realfagskjelleren we
+                mix in some black and dark colors. Apart from the links used for
+                the navbar, all the links we use will be orange, underlined and
+                change color to blue on hover. The links in the navbar will not
+                have any further visual effects other than what was described in
+                the navbar section</p>
 
-        <h3><li>Shadows and Borders</li></h3>
+                <h3>
+                    <li>Shadows and Borders</li>
+                </h3>
 
-        <p>In the media section of the website there will be several images and
-        videos displayed in thumbnail size. clicking an image will bring up a
-        larger version of that image, leaving the rest of the gallery in shadow.
-        In addition, every image in the gallery is enclosed in a small
-        border.</p>
+                <p>In the media section of the website there will be several
+                images and videos displayed in thumbnail size. clicking an image
+                will bring up a larger version of that image, leaving the rest
+                of the gallery in shadow. In addition, every image in the
+                gallery is enclosed in a small border.
+                </p>
 
-      </ul>
-
-    </section>
-
-    <section>
-
-      <h2>Content</h2>
-
-      <ol>
-        <li> Homepage.html </li>
-        <p> </p>
-        <li> Contact.html </li>
-        <p> </p>
-        <li> Events.html </li>
-        <p> </p>
-        <li> Map.html </li>
-        <p> </p>
-        <li> Pictures.html </li>
-        <p> </p>
-        <li> Games.html </li>
-        <p> </p>
-      <ol>
-
-    </section>
-
-    <section>
-
-      <h2>Minimum Requirements</h2>
-
-      <!-- TODO:  -->
-      <ul>
-        <li>games_finn_toeren.js</li>
-        <li>games_4chan.js</li>
-        <li>games_terning.js</li>
-        <li>events.js</li>
-      </ul>
-
-    </section>
-
-    <section>
-
-      <h2>Plan</h2>
-
-      <h3> Organizational Scheme <h3>
-        <ul>
-          <li>homepage.html</li>
-          <li>events.html</li>
-          <li>map.html</li>
-          <li>pictures.html</li>
-          <li>contact.html</li>
-          <li>games.html</li>
-          <li>style.css</li>
-          <li>js/
-            <ul class="organize">
-              <li>games_finn_toeren.js</li>
-              <li>games_4chan.js</li>
-              <li>games_terning.js</li>
-              <li>events.js</li>
             </ul>
-          </li>
-          <li>img/
-            <ul class="organize">
-              <!-- TODO: hvilke bilder -->
-              <li>Lorem</li>
-              <li>ipsum</li>
-              <li>dolor</li>
-              <li>sit</li>
-            </ul>
-          </li>
-          <li>video/
-            <ul class="organize">
-              <!-- TODO: hvilke bilder -->
-              <li>Lorem</li>
-              <li>ipsum</li>
-              <li>dolor</li>
-              <li>sit</li>
-            </ul>
-          </li>
-        </ul>
 
-      <h3>Work Division and Deadlines<h3>
-        <table>
-          <tr>
-            <th>Filename</th>
-            <th>Description</th>
-            <th>Responsible</th>
-            <th>Deadline</th>
-          </tr>
-          <tr>
-            <td>homepage.html</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>events.html</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>map.html</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>pictures.html</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>contact.html</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>games.html</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>map.js</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>games_finn_toeren.js</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>games_4chan.js</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>games_terning.js</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>events.js</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
+        </section>
 
-<!--
+        <section>
+
+            <h2>Content</h2>
+
+            <ol>
+                <li> Homepage.html </li>
+                <p> </p>
+                <li> Contact.html </li>
+                <p> </p>
+                <li> Events.html </li>
+                <p> </p>
+                <li> Map.html </li>
+                <p> </p>
+                <li> Pictures.html </li>
+                <p> </p>
+                <li> Games.html </li>
+                <p> </p>
+                <ol>
+
+        </section>
+
+        <section>
+
+            <h2>Minimum Requirements</h2>
+
+            <!-- TODO:  -->
+            <ul>
+                <li>games_finn_toeren.js</li>
+                <li>games_4chan.js</li>
+                <li>games_terning.js</li>
+                <li>events.js</li>
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>Plan</h2>
+
+            <h3> Organizational Scheme
+                <h3>
+                    <ul>
+                        <li>homepage.html</li>
+                        <li>events.html</li>
+                        <li>map.html</li>
+                        <li>pictures.html</li>
+                        <li>contact.html</li>
+                        <li>games.html</li>
+                        <li>style.css</li>
+                        <li>js/
+                            <ul class="organize">
+                                <li>games_finn_toeren.js</li>
+                                <li>games_4chan.js</li>
+                                <li>games_terning.js</li>
+                                <li>events.js</li>
+                            </ul>
+                        </li>
+                        <li>img/
+                            <ul class="organize">
+                                <!-- TODO: hvilke bilder -->
+                                <li>Lorem</li>
+                                <li>ipsum</li>
+                                <li>dolor</li>
+                                <li>sit</li>
+                            </ul>
+                        </li>
+                        <li>video/
+                            <ul class="organize">
+                                <!-- TODO: hvilke bilder -->
+                                <li>Lorem</li>
+                                <li>ipsum</li>
+                                <li>dolor</li>
+                                <li>sit</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>Work Division and Deadlines
+                        <h3>
+                            <table>
+                                <tr>
+                                    <th>Filename</th>
+                                    <th>Description</th>
+                                    <th>Responsible</th>
+                                    <th>Deadline</th>
+                                </tr>
+                                <tr>
+                                    <td>homepage.html</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>events.html</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>map.html</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>pictures.html</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>contact.html</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>games.html</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>map.js</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>games_finn_toeren.js</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>games_4chan.js</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>games_terning.js</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>calendar.js</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
+                            <!--
 <ol>
 <li> Homepage.html </li>
 <li> Contact.html </li>
@@ -319,10 +361,10 @@ Filename: P2_design.html
 -->
 
 
-  </section>
-  </content>
+        </section>
+    </content>
 
-  </body>
+</body>
 
 
 </html>
