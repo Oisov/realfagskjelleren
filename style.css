@@ -33,57 +33,25 @@ p {
     font-family: "Computer Modern";
     font-size: 16px;
 }
-
-#poly {
-    display: none;
+html {
+    width: 100%;
 }
 
 body {
     width: 50%;
     margin: auto;
     background-color: black;
+    padding-bottom: 60px
 }
 
-content {
-    line-height: 1.5;
+#footer {
+    position:absolute;
+    bottom:0;
+    width:50%;
+    height:60px;   /* Height of the footer */
+    /* background:#6cf; */
 }
 
-figure {
-    text-align: center;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-canvas {
-    display: block;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: : 8px;
-    max-width: 85%;
-}
-
-section {
-    border: 1px dashed;
-    border-radius: 10px;
-    padding: 30px 30px;
-    margin-top: 25px;
-    margin-bottom: 50px;
-}
-
-ul li,
-ol li {
-    list-style-position: inside;
-}
 
 header {
     margin-top: 40px;
@@ -115,34 +83,4 @@ h3 {
 
 h2 span {
     font-size: small;
-}
-
-section:first-child li,
-section:first-child i {
-    color: white;
-    list-style: none;
-}
-
-section:first-child li::before {
-    content: "• ";
-    color: orange;
-}
-
-table,
-th,
-td {
-    border: 1px solid orange;
-}
-
-th {
-    font-size: 24px;
-}
-
-table {
-    width: 100%;
-}
-
-.organize li {
-    margin-left: 20px;
-
 }
