@@ -7,30 +7,53 @@ Filename: P2_design.html
 
 
 <html>
-
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#menu').('navbar.html');
+    });
+</script>
 <head>
     <meta charset="utf-8">
     <title>Realfagskjelleren</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="navbar.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="./img/favicon.ico">
 </head>
 
 <body>
 
-    <header>
-        <h1>Velkommen hver fredag!</h1>
-        <h2>Kommende arrangementer:</h2>
-    </header>
 
-    <p id="p1">Hello World!</p>
+  <div id="wrapper">
 
+    <div id="header">
+      <img src="./img/tempbanner.png" alt="">
+      
+      <div id="navbar">
+        <ul>
+          <li><a class="active">Home</a></li>
+          <li><a href="./events.html">Events</a></li>
+          <li><a href="./map.html">Find us</a></li>
+          <li><a href="./pictures.html">Pictures</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
+          <li><a href="./games.html">Games</a></li>
+        </ul>
+      </div> <!-- navbar end -->
+
+    </div>
+
+    <div id="content">
+      <h1>Velkommen hver fredag!</h1>
+      <h2>Kommende arrangementer:</h2>
+      <p id="p1">Hello World!</p>
+    </div>
 
     <div id="footer"> <hr>
         Some other text here
     </div>
 
-    <script src="./javascript/detectMobile.js">
-    </script>
-</body>
+    <script src="./javascript/detectMobile.js"></script>
+
+    </div>
+  </body>
 
 </html>
