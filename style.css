@@ -45,6 +45,17 @@ img {
   height: 60px;   /* Height of the footer */
 }
 
+.fblogo {
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+}
+
+#images{
+    text-align: center;
+    vertical-align: middle;
+}
+
 @font-face {
     font-family: "Computer Modern";
     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
