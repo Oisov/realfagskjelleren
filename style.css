@@ -14,7 +14,8 @@ body {
   width: 50%;
   margin: auto;
   height:100%;
-  border: 1px solid red;
+  background-color: black;
+  border: 1px solid black;
 }
 img {
   width: 100%;
@@ -35,7 +36,11 @@ img {
 }
 
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+
 }
 
 #footer {
@@ -44,8 +49,11 @@ img {
   width: 100%;
   height: 60px;   /* Height of the footer */
 }
-
+#banner {
+  width: 50%;
+}
 .fblogo {
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     height: 30px;

@@ -1,8 +1,9 @@
 #navbar {
+  width: 100%;
+  vertical-align: middle;
   display: inline-block;
   position: fixed;
   text-align: center;
-  border: 1px solid red;
 }
 
 #navbar ul {
