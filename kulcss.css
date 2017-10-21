@@ -6,18 +6,18 @@
 html, body {
 	height: 100%;
 	background-color: orange;
-	border: 1px solid red;
 }
 
 h3 {
 	height: 1000px;
 }
-.navbar-fixed {
-  top: 0;
-  z-index: 100;
-  position: fixed;
-  width: 100%;
+
+hr {
+	color: orange;
+	background-color: orange;
+	border-color: orange;
 }
+
 
 #body_div {
 	background-color: black;
@@ -27,7 +27,6 @@ h3 {
 	height: 3000px;
 	position: relative;
 	padding-bottom: 60px;
-	border: 1px solid red;
 	color: white;
 }
 
@@ -37,6 +36,12 @@ h3 {
   background-color: gray;
 	overflow: hidden;
 }
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+	width: 50%;
+}
 
 #nav_bar {
 	border: 0;
@@ -44,6 +49,9 @@ h3 {
 	border-radius: 0px;
 	margin-bottom: 0;
   height: 30px;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 .nav_links {
@@ -54,10 +62,15 @@ h3 {
 .nav_links li {
 	display: inline-block;
     margin-top: 4px;
+		border-right: 1px solid orange;
+}
+
+.nav_links li:last-child {
+	border: none;
 }
 .nav_links li a {
 	padding: 0 15.5px;
-	color: #3498db;
+	color: orange;
 	text-decoration: none;
 }
 #footer {
@@ -79,7 +92,9 @@ h3 {
     vertical-align: middle;
 }
 #wrapper {
-  width: 100%;
+  width: 50%;
+	margin: auto;
   min-height:100%;
   position: relative;
+	background-color: black;
 }
