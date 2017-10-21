@@ -41,3 +41,11 @@
 .active {
   background: linear-gradient(#408C4D, #01380B);
 }
+
+.navbar-mobile li{
+  display: block;
+}
+
+.navbar-mobile li a{
+  display: block;
+}

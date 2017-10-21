@@ -56,3 +56,7 @@ hr {
   position: relative;
 	background-color: black;
 }
+
+#menu_button {
+	display: none;
+}
