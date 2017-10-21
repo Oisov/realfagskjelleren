@@ -19,15 +19,19 @@ hr {
 	width: 50%;
 	margin: auto;
 	top: 0;
-	height: 3000px;
+	height: 30px;
 	position: relative;
 	padding-bottom: 60px;
 	color: white;
 }
 
 #banner {
-	width: 100%;
+	max-height: 200px;
 	overflow: hidden;
+}
+
+#banner img {
+	width: 100%;
 }
 
 #footer {
@@ -57,6 +61,6 @@ hr {
 	background-color: black;
 }
 
-#menu_button {
+#nav_button {
 	display: none;
 }

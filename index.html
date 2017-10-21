@@ -4,8 +4,6 @@ Date: September, 2017
 Purpose: Design Guidelines
 Filename: P2_design.html
    -->
-
-
 <html>
 
 <head>
@@ -21,9 +19,11 @@ Filename: P2_design.html
   <div id="wrapper">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
     </script>
-    <button id="menu_button" type="button">Click me!</button>
-    <img id="banner" src="./img/tempbanner.png">
 
+    <div id="banner">
+      <img id="nav_button" src="./img/button.png" alt="Logo">
+      <img id="logo" src="./img/tempbanner.png">
+    </div>
 
     <nav id='navbar'>
       <ul class='nav_links'>
@@ -35,8 +35,9 @@ Filename: P2_design.html
         ><li><a href="url">Games</a></li>
       </ul>
     </nav>
+
     <div id='content'>
-      <p>asd</p>
+      
     </div>
     <script src="./javascript/scroll.js"></script>
 
@@ -53,7 +54,7 @@ Filename: P2_design.html
     </div>
 
     <script src="./javascript/detectMobile.js"></script>
-
+    <script src="./javascript/navigationbar.js"></script>
 
     </div>
   </body>
