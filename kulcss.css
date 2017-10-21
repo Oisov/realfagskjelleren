@@ -8,16 +8,11 @@ html, body {
 	background-color: orange;
 }
 
-h3 {
-	height: 1000px;
-}
-
 hr {
 	color: orange;
 	background-color: orange;
 	border-color: orange;
 }
-
 
 #body_div {
 	background-color: black;
@@ -34,45 +29,7 @@ hr {
 	width: 100%;
 	overflow: hidden;
 }
-.navbar-fixed {
-  top: 0;
-  z-index: 100;
-  position: fixed;
-	width: 50%;
-}
 
-#nav_bar {
-	border: 0;
-	background-color: #202020;
-	border-radius: 0px;
-	margin-bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-
-.nav_links {
-    margin: 0;
-		text-align: center;
-}
-
-.nav_links li {
-	display: inline-block;
-		border-right: 1px solid orange;
-}
-
-.nav_links li:last-child {
-	border: none;
-}
-.nav_links li a {
-	display: inline-block;
-	padding: 15px 15px;
-	color: orange;
-	text-decoration: none;
-}
-.nav_links li a:hover {
-	background-color: grey;
-}
 #footer {
   position:absolute;
   bottom: 0;
@@ -91,6 +48,7 @@ hr {
     text-align: center;
     vertical-align: middle;
 }
+
 #wrapper {
   width: 50%;
 	margin: auto;
