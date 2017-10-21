@@ -1,0 +1,36 @@
+#navbar {
+  width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: fixed;
+  text-align: center;
+}
+
+#navbar ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+#navbar li {
+  background: linear-gradient(#052FA3, #010F37);
+  float: left;
+  font-size: 30px;
+  border-right: 1px solid grey;
+}
+
+#navbar a {
+  display: inline-block;
+  padding: 15px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar li:last-child {
+  border-right: none;
+}
+#navbar a:hover:not(.active) {
+  background: linear-gradient(#010F37, #607ECE);
+}
+.active {
+  background: linear-gradient(#0C4500, #188C00);
+}

@@ -1,8 +1,67 @@
 * {
-    font-family: Georgia, Palantino, serif;
-    padding: 0;
-    margin: 0;
-    color: orange;
+  font-family: Georgia, Palantino, serif;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+html{
+  height: 100%;
+  background-color: orange;
+}
+
+body {
+  width: 50%;
+  margin: auto;
+  height:100%;
+  background-color: black;
+  border: 1px solid black;
+}
+img {
+  width: 100%;
+  margin: auto;
+}
+
+#wrapper {
+  width: 100%;
+  min-height:100%;
+  position: relative;
+  background-color: black;
+}
+
+#content {
+  margin-top: 70px;
+  padding: 10px;
+  padding-bottom: 60px;   /* Equals height of the footer */
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+#footer {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;   /* Height of the footer */
+}
+#banner {
+  width: 50%;
+}
+.fblogo {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+}
+
+#images{
+    text-align: center;
+    vertical-align: middle;
 }
 
 @font-face {
@@ -27,60 +86,4 @@
     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
     font-weight: bold;
     font-style: italic, oblique;
-}
-
-p {
-    font-family: "Computer Modern";
-    font-size: 16px;
-}
-html {
-    width: 100%;
-}
-
-body {
-    width: 50%;
-    margin: auto;
-    background-color: black;
-    padding-bottom: 60px
-}
-
-#footer {
-    position:absolute;
-    bottom:0;
-    width:50%;
-    height:60px;   /* Height of the footer */
-    /* background:#6cf; */
-}
-
-
-header {
-    margin-top: 40px;
-}
-
-header h2,
-p,
-ul,
-h2 span {
-    color: white;
-}
-
-header h2,
-header h2 span {
-    line-height: normal;
-}
-
-h1,
-h2 {
-    font-family: Flamenco, cursive;
-    color: orange;
-    padding-bottom: 15px;
-}
-
-h3 {
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-
-h2 span {
-    font-size: small;
 }
