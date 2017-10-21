@@ -6,10 +6,10 @@ $(document).ready(function() {
       //nav bar to stick.
       console.log($(window).scrollTop())
     if ($(window).scrollTop() > $("#banner").height()) {
-      $('#nav_bar').addClass('navbar-fixed');
+      $('#navbar').addClass('navbar-fixed');
     }
     if ($(window).scrollTop() < $("#banner").height() + 1) {
-      $('#nav_bar').removeClass('navbar-fixed');
+      $('#navbar').removeClass('navbar-fixed');
     }
   });
 });
