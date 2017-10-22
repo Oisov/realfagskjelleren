@@ -6,13 +6,16 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 // document.getElementById("p1").innerHTML = isMobile;
 if(isMobile) {
   document.getElementById("logo").src="./img/logo.png";
-  document.getElementById("logo").style.height ="50px";
+  document.getElementById("logo").style.height ="100px";
   document.getElementById("logo").style.width ="auto";
   document.getElementById("logo").style.float ="right";
+  document.getElementById("logo").style.padding ="10px";
+
 
   document.getElementById("nav_button").style.display ="inline-block";
-  document.getElementById("nav_button").style.height ="50px";
+  document.getElementById("nav_button").style.height ="100px";
   document.getElementById("nav_button").style.width ="auto";
+    document.getElementById("nav_button").style.padding ="10px 10px 10px 20px";
 
   document.getElementById("banner").style.setProperty("background-color", "orange", "important");
   document.getElementById("wrapper").style.width ="100%";
