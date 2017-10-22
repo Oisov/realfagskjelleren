@@ -21,7 +21,7 @@ hr {
 	top: 0;
 	height: 30px;
 	position: relative;
-	padding-bottom: 60px;
+	padding-bottom: 80px;
 	color: white;
 }
 
@@ -38,19 +38,21 @@ hr {
   position:absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;   /* Height of the footer */
+  height: 80px;   /* Height of the footer */
 }
 
 .fblogo {
     width: auto;
     margin-left: auto;
     margin-right: auto;
-    height: 30px;
+    height: 50px;
+    padding: 0px 20px
 }
 
 #images{
     text-align: center;
     vertical-align: middle;
+    transform: translateY(20%); 
 }
 
 #wrapper {
