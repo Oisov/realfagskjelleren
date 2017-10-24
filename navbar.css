@@ -1,36 +1,66 @@
-#navbar {
-  width: 100%;
-  vertical-align: middle;
-  display: inline-block;
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
   position: fixed;
-  text-align: center;
+	width: 50%;
 }
 
-#navbar ul {
+#navbar {
+	border: 0;
+	background: linear-gradient(#605858, #1E1C1C);
+	border-radius: 0px;
+	margin-bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.nav_links {
+    margin: 0;
+		text-align: center;
+}
+
+.nav_links li {
+	display: inline-block;
+	border-right: 1px solid orange;
+}
+
+.nav_links li:last-child {
+	border: none;
+}
+.nav_links li a {
   display: inline-block;
-  list-style-type: none;
+	padding: 15px 15px;
+	color: orange;
+	text-decoration: none;
+}
+.nav_links li a:hover:not(.active) {
+	background: linear-gradient(#D8D2D2, #605858);
 }
 
-#navbar li {
-  background: linear-gradient(#052FA3, #010F37);
-  float: left;
-  font-size: 30px;
-  border-right: 1px solid grey;
-}
-
-#navbar a {
-  display: inline-block;
-  padding: 15px 15px;
-  color: white;
-  text-decoration: none;
-}
-
-#navbar li:last-child {
-  border-right: none;
-}
-#navbar a:hover:not(.active) {
-  background: linear-gradient(#010F37, #607ECE);
-}
 .active {
-  background: linear-gradient(#0C4500, #188C00);
+  background: linear-gradient(#408C4D, #01380B);
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.navbar-mobile li{
+  display: block;
+}
+
+.navbar-mobile li a{
+  display: block;
+}
+#navbar-mobile {
+  display: block;
+}
+
+#navbar-mobile li{
+  display: block;
+}
+
+#navbar-mobile li a{
+  display: block;
 }
