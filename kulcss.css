@@ -25,6 +25,23 @@ hr {
 	color: white;
 }
 
+/* Denne og neste brukes til å få kartet til å se bra ut: */
+#google_maps {
+	position: relative;
+	padding-top: 110%;
+	margin-top: 10%;
+	margin-left: -20%;
+	margin-right: -20%;
+}
+
+#google_maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 #banner {
 	max-height: 200px;
 	overflow: hidden;
