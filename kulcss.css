@@ -19,7 +19,7 @@ hr {
 	width: 50%;
 	margin: auto;
 	top: 0;
-	height: 30px;
+	height: 100%;
 	position: relative;
 	padding-bottom: 80px;
 	color: white;
@@ -32,6 +32,7 @@ hr {
 	margin-top: 10%;
 	margin-left: -20%;
 	margin-right: -20%;
+	margin-bottom: 10%;
 }
 
 #google_maps iframe {
@@ -45,10 +46,12 @@ hr {
 #banner {
 	max-height: 200px;
 	overflow: hidden;
+	
 }
 
 #banner img {
-	width: 100%;
+	width: 80%;
+	margin-left: 10%;
 }
 
 #footer {
