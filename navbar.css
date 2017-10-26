@@ -1,5 +1,16 @@
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+	width: 50%;
+}
+#navwrap {
+	height: 40%;
+}
+#mobile_navwrap {
+	display: none;
+}
 #navbar {
-  height: 10%;
 	background: linear-gradient(#605858, #1E1C1C);
 }
 

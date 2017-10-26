@@ -16,30 +16,38 @@ Filename: P2_design.html
 </head>
 
 <body>
-  <div id="wrapper">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
     </script>
-
-    <div id="banner">
-      <img id="nav_button" src="./img/button_new.png" alt="Logo">
-      <img id="logo" src="./img/banner.png">
-    </div>
-
-    <nav id='navbar'>
-      <ul class='nav_links'>
-        <li><a href="./index.html" class="active">Home</a></li
-        ><li><a href="./calendar.html">Events</a></li
-        ><li><a href="./map.html">Find Us</a></li
-        ><li><a href="./media.html">Pictures</a></li
-        ><li><a href="./contact.html">Contact Us</a></li
-        ><li><a href="./games.html">Games</a></li>
-      </ul>
-    </nav>
+    <div id="header"> <!-- Header start -->
+      <div id="banner">
+        <img id="navbut" src="./img/button_new.png" alt="Logo">
+        <img id="logo" src="./img/banner.png">
+      </div>
+      <div id="navwrap">
+        <nav id="navbar">
+          <ul class='nav_links'>
+            <li><a href="./index.html" class="active">Home</a></li
+            ><li><a href="./calendar.html">Events</a></li
+            ><li><a href="./map.html">Find Us</a></li
+            ><li><a href="./media.html">Pictures</a></li
+            ><li><a href="./contact.html">Contact Us</a></li
+            ><li><a href="./games.html">Games</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- Header end -->
 
     <div id='content'>
+  	  <p>Realfagskjelleren is located at Prestekragevegen 14 in the old
+  	  kindergarten at Moholt Student Village.</p>
 
+  	  <div id="google_maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1785.818972399802!2d10.429976559995113!3d63.410574328344545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d31c90789fe9b%3A0x991a0b91a506ec11!2sPrestekragevegen+14%2C+7050+Trondheim!5e0!3m2!1sno!2sno!4v1508866953330" frameborder="0" allowfullscreen></iframe>
+  	  </div>
     </div>
-    <!-- <script src="./javascript/scroll.js"></script> -->
+
+    <script src="./javascript/scroll.js"></script>
 
     <div id="footer">
       <hr>
@@ -56,7 +64,7 @@ Filename: P2_design.html
     <script src="./javascript/detectMobile.js"></script>
     <script src="./javascript/navigationbar.js"></script>
 
-    </div>
+
   </body>
 
 </html>
