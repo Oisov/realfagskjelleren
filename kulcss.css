@@ -4,8 +4,10 @@
 }
 
 html, body {
-	height: 100%;
 	background-color: orange;
+}
+html, body, wrapper {
+	height: 100%;
 }
 
 hr {
@@ -44,17 +46,19 @@ hr {
 }
 
 #banner {
-	max-height: 200px;
+	text-align: center;
 	overflow: hidden;
-	
+	padding: 0px 200px;
+	margin: auto;
 }
 
 #banner img {
-	width: 80%;
-	margin-left: 10%;
+	margin: auto;
+	max-width: 100%;
 }
 
 #footer {
+	overflow: auto;
   position:absolute;
   bottom: 0;
   width: 100%;
@@ -72,13 +76,13 @@ hr {
 #images{
     text-align: center;
     vertical-align: middle;
-    transform: translateY(20%); 
+    transform: translateY(20%);
 }
 
 #wrapper {
+	min-height: 100%;
   width: 50%;
 	margin: auto;
-  min-height:100%;
   position: relative;
 	background-color: black;
 }

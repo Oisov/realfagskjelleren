@@ -6,6 +6,7 @@
 }
 
 #navbar {
+  max-height: 1%;
 	border: 0;
 	background: linear-gradient(#605858, #1E1C1C);
 	border-radius: 0px;
