@@ -3,11 +3,33 @@
 	padding: 0;
 }
 
+html, #wrapper, #content{
+	width: 100%;
+}
+body {
+	margin: auto;
+	width: 50%;
+}
+
+html, body, #wrapper {
+	height: 100%;
+}
+#wrapper {
+	min-height: 100%;
+}
+#footer {
+	height: 10%;
+  width: 100%;
+}
+#images {
+	height: 90%;
+	width: 60%;
+}
+#banner {
+	height: 15%;
+}
 html, body {
 	background-color: orange;
-}
-html, body, wrapper {
-	height: 100%;
 }
 
 hr {
@@ -16,16 +38,56 @@ hr {
 	border-color: orange;
 }
 
-#content {
-	background-color: black;
-	width: 50%;
+#wrapper {
+	min-height: 100%;
 	margin: auto;
-	top: 0;
+  position: relative;
+	background-color: black;
+}
+
+#banner {
+	position: relative;
+}
+
+#nav_button {
+	display: none;
+}
+
+#banner img {
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
 	height: 100%;
+	width: auto;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#content {
+	border: 1px solid red;
+	background-color: black;
 	position: relative;
 	padding-bottom: 80px;
 	color: white;
 }
+#footer {
+	overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+#images{
+	margin: auto;
+  text-align: center;
+	vertical-align: middle;
+}
+
+.fblogo {
+	max-width: 10%;
+	padding: 3% 2%;
+}
+
+
 
 /* Denne og neste brukes til å få kartet til å se bra ut: */
 #google_maps {
@@ -43,50 +105,4 @@ hr {
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
-
-#banner {
-	text-align: center;
-	overflow: hidden;
-	padding: 0px 200px;
-	margin: auto;
-}
-
-#banner img {
-	margin: auto;
-	max-width: 100%;
-}
-
-#footer {
-	overflow: auto;
-  position:absolute;
-  bottom: 0;
-  width: 100%;
-  height: 80px;   /* Height of the footer */
-}
-
-.fblogo {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50px;
-    padding: 0px 20px
-}
-
-#images{
-    text-align: center;
-    vertical-align: middle;
-    transform: translateY(20%);
-}
-
-#wrapper {
-	min-height: 100%;
-  width: 50%;
-	margin: auto;
-  position: relative;
-	background-color: black;
-}
-
-#nav_button {
-	display: none;
 }

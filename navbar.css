@@ -1,28 +1,14 @@
-.navbar-fixed {
-  top: 0;
-  z-index: 100;
-  position: fixed;
-	width: 50%;
-}
-
 #navbar {
-  max-height: 1%;
-	border: 0;
+  height: 10%;
 	background: linear-gradient(#605858, #1E1C1C);
-	border-radius: 0px;
-	margin-bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
 }
 
 .nav_links {
-    margin: 0;
 		text-align: center;
 }
 
 .nav_links li {
-	display: inline-block;
+  display: inline-block;
 	border-right: 1px solid orange;
 }
 
