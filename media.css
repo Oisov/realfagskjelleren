@@ -1,3 +1,6 @@
+#content {
+    width: 100%;
+}
 .images>img {
     padding: 20px;
     border-radius: 20px;
@@ -19,7 +22,7 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 .modalImage {
-    width: 60%;
+    width: 50%;
     margin: auto;
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
