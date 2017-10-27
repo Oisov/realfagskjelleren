@@ -1,9 +1,9 @@
-.column>img {
+.images>img {
     padding: 20px;
     border-radius: 20px;
     cursor: pointer;
 }
-.column>img:hover {
+.images>img:hover {
     opacity: 0.8;
 }
 .modal {
