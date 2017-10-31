@@ -1,9 +1,9 @@
-document.getElementById("menu_button").onclick = function() {
+document.getElementById("mobile_navbut").onclick = function() {
   displayMenu()
 };
 
 function displayMenu(){
 
-  // document.getElementById("testScum").style.display = "block";
-
+var temp = document.getElementById("mobile_header");
+temp.style.backgroundcolor ="white";
 }

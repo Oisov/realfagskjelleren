@@ -34,6 +34,12 @@ if(!isMobile) {
   temp.id ="mobile_navbut";
   temp = document.getElementById("navwrap");
   temp.id ="mobile_navwrap";
+  temp = document.getElementById("content");
+  temp.id ="mobile_content";
+  temp = document.getElementById("footer");
+  temp.id ="mobile_footer";
+  temp = document.getElementById("images");
+  temp.id ="mobile_images";
   temp = document.getElementsByTagName("body")[0];
   temp.style.width="100%";
   // $('#navbar').addClass('navbar-mobile');

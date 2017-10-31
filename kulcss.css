@@ -27,7 +27,6 @@ body {
 #navbut {
 	display: none;
 }
-
 #logo {
 	left: 0;
 	right: 0;
@@ -38,33 +37,43 @@ body {
 	top: 50%;
 	transform: translateY(-50%);
 }
+
 #mobile_logo {
+	position: absolute;
+	right: 5%;
 	height: 100%;
 	width: auto;
 	display: inline-block;
-	float: right;
 }
 #mobile_navbut {
+	position: absolute;
+	left: 5%;
 	height: 100%;
-	float: left;
+	width: auto;
 	display: inline-block;
 }
 #mobile_header {
 	position: relative;
-	height: 25%;
+	height: 15%;
 	background-color: orange;
 }
 #mobile_banner {
-	height: 100%;
-	position: relative;
+	position: absolute;
+	top: 50%;
+	height: 75%;
+	width: 100%;
+	transform: translateY(-50%);
 }
 /* Contained by Header tag END */
-
-
 
 #content {
 	background-color: black;
 	min-height: 65%;
+}
+
+#mobile_content {
+	background-color: black;
+	min-height: 75%;
 }
 
 #footer {
@@ -73,9 +82,20 @@ body {
   width: 100%;
 }
 
+#mobile_footer {
+	height: 10%;
+	position: relative;
+}
+
 #images {
 	height: 90%;
 	width: 60%;
+}
+#mobile_images {
+	height: 60%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 hr {
@@ -84,20 +104,16 @@ hr {
 	border-color: orange;
 }
 
-#wrapper {
-	min-height: 100%;
-	margin: auto;
-  position: relative;
-	background-color: black;
-}
-
-
-
 #content {
 	position: relative;
 	text-align: center;
 	color: white;
 }
+#mobile_content {
+	color: white;
+	text-align: center;
+}
+/* Contained in Footer tags */
 #footer {
 	overflow: hidden;
 	background-color: black;
@@ -109,10 +125,29 @@ hr {
 	vertical-align: middle;
 }
 
+#mobile_footer {
+	position: relative;
+	background-color: black;
+	text-align: center;
+}
+#mobile_images {
+	position: absolute;
+	height: 70%;
+	width: 100%;
+	text-align: center;
+}
+/*Mobile fblogo*/
 .fblogo {
+	display: inline-block;
+	height: 100%;
+	padding: 0 5%;
+	width: auto;
+}
+/*.fblogo {
 	max-width: 10%;
 	padding: 3% 2%;
-}
+}*/
+
 
 /* Denne og neste brukes til å få kartet til å se bra ut: */
 #google_maps {
