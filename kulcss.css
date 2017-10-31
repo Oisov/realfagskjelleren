@@ -13,7 +13,6 @@ html {
   overflow-y: scroll;
 }
 
-
 body {
 	margin: auto;
 	width: 50%;
@@ -25,27 +24,46 @@ body {
 	height: 25%;
 	background-color: black;
 }
-
-#banner {
+#bannerwrap {
+	/*height should be 15% of total, so 60% of 25%*/
 	height: 60%;
 	position: relative;
 }
-
-#navbut {
-	display: none;
-}
-
-#logo {
-	left: 0;
-	right: 0;
-	margin: auto;
+#banner {
 	position: absolute;
-	height: 100%;
-	width: auto;
+	height: 75%;
+	width: 100%;
 	top: 50%;
 	transform: translateY(-50%);
 }
-
+#navbut {
+	/*hidden in desktop mode*/
+	display: none;
+}
+#logo {
+	height: 100%;
+	width: auto;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+#navwrap {
+	/*height should be 10% of total, so 40% of 25%*/
+	height: 40%;
+}
+#mobile_header {
+	position: relative;
+	height: 15%;
+	background-color: orange;
+}
+#mobile_bannerwrap {
+	position: absolute;
+	height: 75%;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+}
 #mobile_logo {
 	position: absolute;
 	right: 5%;
@@ -60,102 +78,70 @@ body {
 	width: auto;
 	display: inline-block;
 }
-#mobile_header {
-	position: relative;
-	height: 15%;
-	background-color: orange;
+#mobile_navwrap {
+	height: 100%;
+	display: none;
 }
-#mobile_banner {
-	position: absolute;
-	top: 50%;
-	height: 75%;
-	width: 100%;
-	transform: translateY(-50%);
+#mobile_navbar {
+	position: fixed;
+	top: 15%;
 }
 /* Contained by Header tag END */
-
+/* Contained by Content tag START */
 #content {
+	position: relative;
+	text-align: center;
+	color: white;
 	background-color: black;
 	min-height: 65%;
 }
-
 #mobile_content {
 	background-color: black;
 	min-height: 75%;
+	color: white;
+	text-align: center;
 }
-
+/* Contained by Content tag END */
+/* Contained by Footer tag START */
 #footer {
+	height: 10%;
+	width: 100%;
 	background-color: black;
-	height: 10%;
-  width: 100%;
-}
-
-#mobile_footer {
-	height: 10%;
 	position: relative;
+	text-align: center;
 }
-
 #images {
-	height: 90%;
-	width: 60%;
-}
-#mobile_images {
 	height: 60%;
+	width: 100%;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 }
-
+#mobile_footer {
+	height: 10%;
+	width: 100%;
+	background-color: black;
+	position: relative;
+	text-align: center;
+}
+#mobile_images {
+	height: 60%;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.footerlogo {
+	height: 100%;
+	width: auto;
+	display: inline-block;
+	padding: 0 3%;
+}
 hr {
 	color: orange;
 	background-color: orange;
 	border-color: orange;
 }
-
-#content {
-	position: relative;
-	text-align: center;
-	color: white;
-}
-#mobile_content {
-	color: white;
-	text-align: center;
-}
-/* Contained in Footer tags */
-#footer {
-	overflow: hidden;
-	background-color: black;
-}
-
-#images{
-	margin: auto;
-  text-align: center;
-	vertical-align: middle;
-}
-
-#mobile_footer {
-	position: relative;
-	background-color: black;
-	text-align: center;
-}
-#mobile_images {
-	position: absolute;
-	height: 70%;
-	width: 100%;
-	text-align: center;
-}
-/*Mobile fblogo*/
-.fblogo {
-	display: inline-block;
-	height: 100%;
-	padding: 0 5%;
-	width: auto;
-}
-/*.fblogo {
-	max-width: 10%;
-	padding: 3% 2%;
-}*/
-
 
 /* Denne og neste brukes til å få kartet til å se bra ut: */
 #google_maps {

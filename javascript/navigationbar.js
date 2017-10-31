@@ -1,9 +1,12 @@
-document.getElementById("mobile_navbut").onclick = function() {
-  displayMenu()
-};
+var isOpen = false;
 
-function displayMenu(){
-
-var temp = document.getElementById("mobile_header");
-temp.style.backgroundcolor ="white";
+function toggleMenu(){
+    if(isOpen) {
+      document.getElementById("mobile_navwrap").style.display = "none";
+      isOpen = false;
+    }
+    else{
+      document.getElementById("mobile_navwrap").style.display = "block";
+      isOpen = true;
+    }
 }
