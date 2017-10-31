@@ -8,21 +8,6 @@ if(!isMobile) {
   document.getElementById("logo").src="./img/logo.png";
   document.getElementById("logo").style.display ="inline-block";
 
-  // document.getElementById("logo").style.height ="100px";
-  // document.getElementById("logo").style.width ="auto";
-  // document.getElementById("logo").style.float ="right";
-  // document.getElementById("logo").style.padding ="10px";
-  //
-  // document.getElementById("nav_button").style.display ="inline-block";
-  // document.getElementById("nav_button").style.height ="100px";
-  // document.getElementById("nav_button").style.width ="auto";
-  // document.getElementById("nav_button").style.padding ="10px 10px 10px 20px";
-  //
-  // document.getElementById("banner").style.setProperty("background-color", "orange", "important");
-  // document.getElementById("wrapper").style.width ="100%";
-  // $("#banner").addClass("mobilebanner");
-  // $("#banner").removeClass("banner");
-
   var temp = document.getElementById("header");
   temp.id ="mobile_header";
   temp = document.getElementById("banner");
