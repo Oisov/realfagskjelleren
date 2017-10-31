@@ -5,7 +5,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
 // document.getElementById("p1").innerHTML = isMobile;
 function checkMobile(){
-  if(!isMobile) {
+  if(isMobile) {
     document.getElementById("logo").src="./img/logo.png";
     document.getElementById("logo").style.display ="inline-block";
 
