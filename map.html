@@ -1,66 +1,68 @@
 <!DOCTYPE html>
 <!-- Author: Øystein, Knut, Jørgen og Simon
 Date: September, 2017
-Purpose: Map page
-Filename: map.html
+Purpose: Design Guidelines
+Filename: P2_design.html
    -->
 <html>
 
 <head>
   <meta charset="utf-8">
-  <title>Find Us</title>
+  <title>Realfagskjelleren</title>
   <link href="kulcss.css" rel="stylesheet" type="text/css">
-  <!-- <link href="style.css" rel="stylesheet" type="text/css"> -->
   <link href="navbar.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="./img/favicon.ico">
 </head>
 
 <body>
-  <div id="wrapper">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
     </script>
+    <div id="header"> <!-- Header start -->
+      <div id="banner">
+        <img id="navbut" src="./img/button_new.png" alt="Logo">
+        <img id="logo" src="./img/banner.png">
+      </div>
+      <div id="navwrap">
+        <nav id="navbar">
+          <ul class="nav_links">
+            <li><a href="./index.html">Home</a></li
+            ><li><a href="./index.html">Events</a></li
+            ><li><a href="./map.html" class="active">Find Us</a></li
+            ><li><a href="./media.html">Pictures</a></li
+            ><li><a href="./contact.html">Contact Us</a></li
+            ><li><a href="./games.html">Games</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- Header end -->
 
-    <div id="banner">
-      <img id="nav_button" src="./img/button_new.png" alt="Logo">
-      <img id="logo" src="./img/banner.png">
+    <div id="content">
+      <p>Realfagskjelleren is located at Prestekragevegen 14 in the old
+   	  kindergarten at Moholt Student Village.</p>
+   	  <div id="google_maps">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1785.818972399802!2d10.429976559995113!3d63.410574328344545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d31c90789fe9b%3A0x991a0b91a506ec11!2sPrestekragevegen+14%2C+7050+Trondheim!5e0!3m2!1sno!2sno!4v1508866953330" frameborder="0" allowfullscreen></iframe>
+   	  </div>
     </div>
 
-    <nav id='navbar'>
-      <ul class='nav_links'>
-        <li><a href="./index.html">Home</a></li
-        ><li><a href="./calendar.html">Events</a></li
-        ><li><a href="./map.html" class="active">Find Us</a></li
-        ><li><a href="./media.html">Pictures</a></li
-        ><li><a href="./contact.html">Contact Us</a></li
-        ><li><a href="./games.html">Games</a></li>
-      </ul>
-    </nav>
-
-    <div id='content'>
-  	  <p>Realfagskjelleren is located at Prestekragevegen 14 in the old
-  	  kindergarten at Moholt Student Village.</p>
-  	  <div id="google_maps">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1785.818972399802!2d10.429976559995113!3d63.410574328344545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d31c90789fe9b%3A0x991a0b91a506ec11!2sPrestekragevegen+14%2C+7050+Trondheim!5e0!3m2!1sno!2sno!4v1508866953330" frameborder="0" allowfullscreen></iframe>
-  	  </div>
-    </div>
     <script src="./javascript/scroll.js"></script>
 
     <div id="footer">
       <hr>
       <div id="images">
-        <a href="mailto:realfagskjellern-styre@list.stud.ntnu.no" >
-          <img class="fblogo" border="0" alt="Mail" src="./img/email.png"/></a>
-        <a href="https://www.instagram.com/explore/tags/rkjeller/" target="_blank">
-          <img class="fblogo" border="0" alt="Facebook" src="./img/temp_instagram.png"/></a>
         <a href="https://www.facebook.com/Realfagskjelleren" target="_blank">
-          <img class="fblogo" border="0" alt="Mail" src="./img/facebook_new.png"/></a>
+          <img class="fblogo" alt="Facebook" src="./img/facebook_new.png"/></a>
+        <a href="https://www.instagram.com/explore/tags/rkjeller/" target="_blank">
+          <img class="fblogo" alt="Instagram" src="./img/temp_instagram.png"/></a>
+        <a href="mailto:realfagskjellern-styre@list.stud.ntnu.no" >
+          <img class="fblogo" alt="Mail" src="./img/email.png"/></a>
       </div>​
     </div>
 
     <script src="./javascript/detectMobile.js"></script>
     <script src="./javascript/navigationbar.js"></script>
 
-    </div>
+
   </body>
 
 </html>

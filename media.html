@@ -11,75 +11,74 @@ Filename: P2_design.html
   <title>Realfagskjelleren</title>
   <link href="kulcss.css" rel="stylesheet" type="text/css">
   <link href="navbar.css" rel="stylesheet" type="text/css">
-  <link href="media.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="./img/favicon.ico">
 </head>
 
 <body>
-  <div id="wrapper">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
-    </script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  </script>
+  <div id="header"> <!-- Header start -->
     <div id="banner">
-      <img id="nav_button" src="./img/button_new.png" alt="Logo">
+      <img id="navbut" src="./img/button_new.png" alt="Logo">
       <img id="logo" src="./img/banner.png">
     </div>
+    <div id="navwrap">
+      <nav id="navbar">
+        <ul class="nav_links">
+          <li><a href="./index.html">Home</a></li
+          ><li><a href="./index.html">Events</a></li
+          ><li><a href="./map.html">Find Us</a></li
+          ><li><a href="./media.html" class="active">Pictures</a></li
+          ><li><a href="./contact.html">Contact Us</a></li
+          ><li><a href="./games.html">Games</a></li>
+        </ul>
+        </nav>
+      </div>
+    </div><!-- Header end -->
 
-    <nav id='navbar'>
-      <ul class='nav_links'>
-        <li><a href="./index.html">Home</a></li
-        ><li><a href="./calendar.html">Events</a></li
-        ><li><a href="./map.html">Find Us</a></li
-        ><li><a href ="./media.html" class="active">Pictures</a></li
-        ><li><a href="./contact.html">Contact Us</a></li
-        ><li><a href="./games.html">Games</a></li>
-      </ul>
-    </nav>
+    <div id="content">
+      <div id="imageModal" class="modal" onclick="closeModal()">
+        <img id="modalImg" class="modalImage" >
+      </div>
 
-    <div id='content'>
+      <div class="images" align="center">
+        <img id="myImg" src="./img/media/bilde1.jpg" alt="Bilde" width="300" height="200" onclick="openModal(this)">
+        <img id="myImg" src="./img/media/bilde2.jpg" alt="Bilde" width="300" height="200" onclick="openModal(this)">
+        <img id="myImg" src="./img/media/bilde3.jpg" alt="Bilde" width="300" height="200" onclick="openModal(this)">
 
-        <div id="imageModal" class="modal" onclick="closeModal()">
-            <img id="modalImg" class="modalImage" >
-        </div>
+        <img id="myImg" src="./img/media/bilde4.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
+        <img id="myImg" src="./img/media/bilde5.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
+        <img id="myImg" src="./img/media/bilde6.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
 
-        <div class="images" align="center">
-            <img id="myImg" src="./img/media/bilde1.jpg" alt="Bilde" width="300" height="200" onclick="openModal(this)">
-            <img id="myImg" src="./img/media/bilde2.jpg" alt="Bilde" width="300" height="200" onclick="openModal(this)">
-            <img id="myImg" src="./img/media/bilde3.jpg" alt="Bilde" width="300" height="200" onclick="openModal(this)">
+        <img id="myImg" src="./img/media/bilde7.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
+        <img id="myImg" src="./img/media/bilde8.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
+        <img id="myImg" src="./img/media/bilde9.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
 
-            <img id="myImg" src="./img/media/bilde4.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
-            <img id="myImg" src="./img/media/bilde5.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
-            <img id="myImg" src="./img/media/bilde6.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
-
-            <img id="myImg" src="./img/media/bilde7.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
-            <img id="myImg" src="./img/media/bilde8.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
-            <img id="myImg" src="./img/media/bilde9.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
-
-            <img id="myImg" src="./img/media/bilde10.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
-            <img id="myImg" src="./img/media/bilde11.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
-            <img id="myImg" src="./img/media/bilde12.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
-        </div>
+        <img id="myImg" src="./img/media/bilde10.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
+        <img id="myImg" src="./img/media/bilde11.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
+        <img id="myImg" src="./img/media/bilde12.jpg" alt="bilde" width="300" height="200" onclick="openModal(this)">
+      </div>
     </div>
 
     <script src="./javascript/scroll.js"></script>
-    <script src="./javascript/media.js"></script>
 
     <div id="footer">
       <hr>
       <div id="images">
-        <a href="mailto:realfagskjellern-styre@list.stud.ntnu.no" >
-          <img class="fblogo" border="0" alt="Mail" src="./img/email.png"/></a>
-        <a href="https://www.instagram.com/explore/tags/rkjeller/" target="_blank">
-          <img class="fblogo" border="0" alt="Facebook" src="./img/temp_instagram.png"/></a>
         <a href="https://www.facebook.com/Realfagskjelleren" target="_blank">
-          <img class="fblogo" border="0" alt="Mail" src="./img/facebook_new.png"/></a>
+          <img class="fblogo" alt="Facebook" src="./img/facebook_new.png"/></a>
+        <a href="https://www.instagram.com/explore/tags/rkjeller/" target="_blank">
+          <img class="fblogo" alt="Instagram" src="./img/temp_instagram.png"/></a>
+        <a href="mailto:realfagskjellern-styre@list.stud.ntnu.no" >
+          <img class="fblogo" alt="Mail" src="./img/email.png"/></a>
       </div>​
     </div>
 
     <script src="./javascript/detectMobile.js"></script>
     <script src="./javascript/navigationbar.js"></script>
 
-    </div>
+
   </body>
 
 </html>
