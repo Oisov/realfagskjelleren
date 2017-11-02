@@ -24,9 +24,38 @@ img {
   z-index: 1;
   width: 60%;
   height: 60%;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(5, 5, 5, 1);
+  box-shadow: 10px 10px 20px black;
+  border-radius: 20px;
 }
 .modalHeader {
 }
+#terningImg {
+  display: block;
+  padding: 10%;
+  height: 112px;
+  width: 112px;
+}
 .modalImg {
+  top: 20%;
+  height: 70%;
+  margin: 1%;
+}
+.modalButton {
+  display: block;
+  width: 20%;
+  height: 10%;
+  font-size: 15px;
+  bottom: 5%;
+  margin: 1%;
+}
+.modalClose {
+  display: block;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  border-radius: 50%;
+  padding: 2%;
+  font-size: 25px;
+  cursor: pointer;
 }

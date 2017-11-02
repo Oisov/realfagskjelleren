@@ -46,19 +46,27 @@ Filename: P2_design.html
 
       <img src="./img/games/4chan.jpg" alt="4chan" onclick="open4chan()">
 
-      <img src="./img/games/terning.jpg" alt="terning" onclick="openTerning()">
+      <img src="./img/games/terning/dice6.png" alt="terning" onclick="openTerning()">
 
       <div id="finnToernModal" class="modal" align="center">
         <div id="finnToernBox" class="modalBox">
           <h1 class="finnToernHeader"> Finn Toern! </h1>
           <img id="finnToernImg" class="modalImg" src="./img/games/kort/red_joker.png" alt="kort">
+          <button id="finnToernButton" class="modalButton">Neste kort</button>
+          <div id="finnToernClose" class="modalClose"> ✖ </div>
         </div>
       </div>
 
       <div id="4chanModal" class="modal">
       </div>
 
-      <div id="terningModal" class="modal">
+      <div id="terningModal" class="modal" align="center">
+        <div id="terningBox" class="modalBox">
+          <h1 id="terningHeader" class="modalHeader"> Terning! </h1>
+          <img id="terningImg" class="modalImg" src="./img/games/terning/dice6.png" alt="kort">
+          <button id="terningButton" class="modalButton">Nytt Kast</button>
+          <div id="terningClose" class="modalClose"> ✖ </div>
+        </div>
       </div>
 
     <script src="./javascript/games.js"></script>
