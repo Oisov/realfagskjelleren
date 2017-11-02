@@ -1,9 +1,40 @@
-img {
-  width: 200px;
-  height: 400px;
+.gameIcon {
+  width: 30%;
+  height: 50%;
   cursor: pointer;
 }
+.gameIcon:hover {
+  opacity: 0.7;
+}
+.gameList {
+  overflow: auto;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+.gameListElement {
+  cursor: pointer;
+  list-style: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 5%;
+  background-color: orange;
+  width: 80%;
+  font-size: 200%;
+  color: black;
+}
+.gameListElement:hover {
+  background-color: darkorange;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
 
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
 .modal {
   display: none;
   position: fixed;
@@ -16,6 +47,10 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .modalBox {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.8s;
+  animation-name: zoom;
+  animation-duration: 0.8s;
   display: none;
   position: fixed;
   overflow: auto;
@@ -29,6 +64,9 @@ img {
   border-radius: 20px;
 }
 .modalHeader {
+  color: black;
+  background-color: orange;
+  padding-top: 3%;
 }
 #terningImg {
   display: block;
@@ -42,20 +80,24 @@ img {
   margin: 1%;
 }
 .modalButton {
+  cursor: pointer;
   display: block;
   width: 20%;
   height: 10%;
   font-size: 15px;
-  bottom: 5%;
   margin: 1%;
 }
 .modalClose {
+  color: black;
   display: block;
   position: absolute;
   top: 1%;
   left: 1%;
-  border-radius: 50%;
   padding: 2%;
   font-size: 25px;
   cursor: pointer;
+}
+
+.modalClose:hover {
+  color: darkorange;
 }
