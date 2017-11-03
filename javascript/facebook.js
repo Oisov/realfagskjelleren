@@ -82,7 +82,7 @@ function parseJSON2list(jsonFile) {
             name: jsonFile[key].name,
             start: new Date(jsonFile[key].start_time),
             end: new Date(jsonFile[key].end_time),
-            url: "https:facebook.com/" + (jsonFile[key].id).trim(),
+            url: "https://facebook.com/" + (jsonFile[key].id).trim(),
             image: jsonFile[key].cover.source
         }
         events.push(event)
