@@ -82,7 +82,7 @@ function parseJSON2list(jsonFile) {
             name: jsonFile[key].name,
             start: new Date(jsonFile[key].start_time),
             end: new Date(jsonFile[key].end_time),
-            url: "https:facebook.com/" + jsonFile[key].id,
+            url: "https:facebook.com/" + (jsonFile[key].id).trim(),
             image: jsonFile[key].cover.source
         }
         events.push(event)
@@ -223,11 +223,12 @@ fetch(eventUrl).then(function(response) {
             document.getElementById("nextEvent").innerHTML = "Arrangement:";
         }
 
-        console.log(nextEvent.url);
         document.getElementById("eventTitle").innerHTML = nextEvent.name;
         document.getElementById("eventDate").innerHTML = " - " + norwegianDate;
         document.getElementById("coverImage").src = nextEvent.image;
+        document.getElementById("cover").href = "";
         document.getElementById("cover").href = nextEvent.url;
+
 
         document.getElementById("nextEvent").style.display = "block";
         document.getElementById("eventTitle").style.display = "inline-block";
