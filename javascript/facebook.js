@@ -227,11 +227,11 @@ fetch(eventUrl).then(function(response) {
         document.getElementById("eventDate").innerHTML = " - " + norwegianDate;
 
         document.getElementById("coverImage").src = nextEvent.image;
-        document.getElementById("coverImage").onclick=function(){
-            window.location = nextEvent.url;
-        };
+        // document.getElementById("coverImage").onclick=function(){
+            // window.location = nextEvent.url;
+        // };
         // document.getElementById("cover").href = "";
-        // document.getElementById("cover").href = nextEvent.url;
+        document.getElementById("cover").href = nextEvent.url;
 
 
         document.getElementById("nextEvent").style.display = "block";
