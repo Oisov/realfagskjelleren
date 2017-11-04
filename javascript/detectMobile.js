@@ -69,6 +69,8 @@ function smallOrMobile(mq) {
         temp.id = "mobile_navwrap";
         temp.style.display="none";
         isOpen = false;
+        temp = document.getElementById("nav_links");
+        temp.id = "mobile_nav_links";
         temp = document.getElementById("content");
         temp.id = "mobile_content";
         temp = document.getElementById("footer");
@@ -96,6 +98,8 @@ function smallOrMobile(mq) {
         temp = document.getElementById("mobile_navwrap");
         temp.id = "navwrap";
         temp.style.display="block";
+        temp = document.getElementById("mobile_nav_links");
+        temp.id = "nav_links";
         temp = document.getElementById("mobile_content");
         temp.id = "content";
         temp = document.getElementById("mobile_footer");
