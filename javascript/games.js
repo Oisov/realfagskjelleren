@@ -66,6 +66,7 @@ for (i = 0; i < 4; i++) {
 var terninger = [dice1.png, dice2.png, dice3.png, dice4.png, dice5.png, dice6.png];
 
 function nyttKort() {
+  document.getElementById("finnToernButton").innerHTML = "Trekk kort";
   if (kortstokk.length > 0) {
     random = Math.floor(Math.random() * kortstokk.length);
     document.getElementById("finnToernImg").src = "./img/games/kort/"+kortstokk[random];
@@ -76,7 +77,7 @@ function nyttKort() {
     document.getElementById("finnToernButton").innerHTML = "Du fant Toern!";
   }
   } else {
-    document.getElementById("finnToernButton").innerHTML = "error!!!";
+    document.getElementById("finnToernButton").innerHTML = "Ikke flere kort";
     document.getElementById("finnToernHeader").innerHTML = kortstokk.length;
   }
 }
