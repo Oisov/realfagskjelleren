@@ -93,6 +93,7 @@ function smallOrMobile(mq) {
         temp.id = "navbut";
         temp = document.getElementById("mobile_navwrap");
         temp.id = "navwrap";
+        temp.style.display="block";
         temp = document.getElementById("mobile_content");
         temp.id = "content";
         temp = document.getElementById("mobile_footer");
@@ -103,7 +104,6 @@ function smallOrMobile(mq) {
         temp.style.width = "50%";
 
     }
-
 }
 
 const mq = window.matchMedia("(min-width: 750px)");
