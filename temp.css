@@ -1,0 +1,101 @@
+
+#futureEvent {
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+#futureEvent>div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #336699;
+    display: inline-block;
+}
+
+#futureEvent div>span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #003366;
+    display: inline-block;
+}
+
+#notFutureEvent {
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+#notFutureEvent>div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+
+#notFutureEvent div>span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+#noEvent {
+    display: none;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+}
+
+#nowEvent {
+    display: none;
+}
+
+#cover {
+    display: none;
+}
+
+#coverImage {
+    width: 100%;
+}
+
+#timer {
+    display: none;
+}
+
+.eventTitleWrapper {
+    margin: auto
+}
+
+#nextEvent {
+    display: none;
+}
+
+
+#eventTitle {
+    margin: 0px auto;
+    text-align: center;
+    /* display: inline-block; */
+    display: none;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+#eventDate {
+    margin: 0px auto;
+    text-align: center;
+    /* display: inline-block; */
+    display: none;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- Author: Øystein, Knut, Jørgen og Simon
+Date: September, 2017
+Purpose: Design Guidelines
+Filename: P2_design.html
+   -->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Realfagskjelleren</title>
+  <link href="kulcss.css" rel="stylesheet" type="text/css">
+  <link href="navbar.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="./img/favicon.ico">
+</head>
+
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <div id="header"> <!-- Header start -->
+      <div id="bannerwrap">
+        <div id="banner">
+          <img id="navbut" src="./img/button_new.png" alt="Logo" onclick="toggleMenu()">
+          <img id="logo" src="./img/banner.png">
+        </div>
+      </div>
+      <div id="navwrap">
+        <nav id="navbar">
+          <ul id="nav_links">
+            <li><a href="./index.html">Home</a></li
+            ><li><a href="./index.html">Events</a></li
+            ><li><a href="./map.html">Find Us</a></li
+            ><li><a href="./media.html">Pictures</a></li
+            ><li><a href="./contact.html">Contact Us</a></li
+            ><li><a href="./games.html" class="active">Games</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- Header end -->
+
+    <div id="content">
+      <link href="games.css" rel="stylesheet" type="text/css">
+
+      <ul class="gameList">
+        <li id="finnToernIcon" class="gameListElement"> Finn Toern </li>
+        <li id="4chanIcon" class="gameListElement"> 4chan spillet </li>
+        <li id="terningIcon" class="gameListElement" onclick="openTerning()"> Terning </li>
+      </ul>
+
+
+<!---
+      <img class="gameIcon" src="./img/games/kort/2_of_clubs.png" alt="finnToern" onclick="openFinnToern()">
+      <img class="gameIcon" src="./img/games/4chan/4chanImg.jpg" alt="4chan" onclick="open4chan()">
+      <img class="gameIcon" src="./img/games/terning/dice6.png" alt="terning" onclick="openTerning()">
+--->
+      <div id="finnToernModal" class="modal" align="center">
+        <div id="finnToernBox" class="modalBox">
+          <h1 id="finnToernHeader" class="modalHeader"> Finn Toern! </h1>
+          <img id="finnToernImg" class="modalImg" src="./img/games/kort/red_joker.png" alt="kort">
+          <button id="finnToernButton" class="modalButton">Neste kort</button>
+          <div id="finnToernClose" class="modalClose"> ✖ </div>
+        </div>
+      </div>
+
+      <div id="4chanModal" class="modal">
+      </div>
+
+      <div id="terningModal" class="modal" align="center">
+        <div id="terningBox" class="modalBox">
+          <h1 id="terningHeader" class="modalHeader"> Terning! </h1>
+          <img id="terningImg" class="modalImg" src="./img/games/terning/dice6.png" alt="kort">
+          <button id="terningButton" class="modalButton">Nytt Kast</button>
+          <div id="terningClose" class="modalClose"> ✖ </div>
+        </div>
+      </div>
+
+    <script src="./javascript/games.js"></script>
+    </div>
+
+    <script src="./javascript/scroll.js"></script>
+
+    <div id="footer">
+      <hr>
+      <div id="images">
+        <a href="https://www.facebook.com/Realfagskjelleren" target="_blank">
+          <img class="footerlogo" alt="Facebook" src="./img/facebook_new.png"/></a>
+        <a href="https://www.instagram.com/explore/tags/rkjeller/" target="_blank">
+          <img class="footerlogo" alt="Instagram" src="./img/temp_instagram.png"/></a>
+        <a href="mailto:realfagskjellern-styre@list.stud.ntnu.no" >
+          <img class="footerlogo" alt="Mail" src="./img/email.png"/></a>
+      </div>​
+    </div>
+
+    <script src="./javascript/detectMobile.js"></script>
+    <script src="./javascript/navigationbar.js"></script>
+  </body>
+</html>
