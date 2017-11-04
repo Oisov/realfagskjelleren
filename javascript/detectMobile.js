@@ -67,6 +67,7 @@ function smallOrMobile(mq) {
         temp.id = "mobile_navbut";
         temp = document.getElementById("navwrap");
         temp.id = "mobile_navwrap";
+        temp.style.display="none";
         temp = document.getElementById("content");
         temp.id = "mobile_content";
         temp = document.getElementById("footer");
