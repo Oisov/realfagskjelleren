@@ -78,7 +78,7 @@ function parseJSON2list(jsonFile) {
     events = []
     for (let key in jsonFile) {
         var event = {
-            name: jsonFile[key].name,
+            name: (jsonFile[key].name).replace(/(\r\n|\n|\r)/gm, ""),
             start: new Date(jsonFile[key].start_time),
             end: new Date(jsonFile[key].end_time),
             url: "https://facebook.com/" + (jsonFile[key].id).trim(),
@@ -156,15 +156,51 @@ function imgCreate(src, alt, title) {
     return img;
 }
 
+function monthNameDate(date) {
+    var monthDate = date.getDate();
+    var monthName = date.toLocaleString("no", {
+        month: "long"
+    });
+    return monthDate + ". " + monthName;
+
+}
+
+function pad(value, length) {
+    return (value.toString().length < length) ? pad("0"+value, length):value;
+}
+
 function createEventList(id, eventList) {
     var numberOfEvents = eventList.length;
     for (var i = 0; i < numberOfEvents; i++) {
         var event = eventList[i];
 
         // title
-        var eventTitle = document.createElement("h1");
-        var eventText = document.createTextNode(event.name);
-        eventTitle.appendChild(eventText);
+        var eventContainer = document.createElement('div');
+        eventContainer.className = "eventTitleContainer";
+
+        // var eventTitle = document.createElement("div");
+
+        var eventLeftTitle = document.createElement('p');
+        eventLeftTitle.className = "eventTitleLeft";
+        var eventStart =
+            pad(event.start.getHours(), 2)+":"+pad(event.start.getMinutes(), 2);
+        var eventEnd = pad(event.end.getHours(), 2)+":"+pad(event.end.getMinutes(),2);
+        var r = document.createTextNode(eventStart + " - " + eventEnd)
+        eventLeftTitle.appendChild(r);
+
+        var eventCenterTitle = document.createElement('p');
+        eventCenterTitle.className = "eventTitleCenter";
+        var s = document.createTextNode(event.name);
+        eventCenterTitle.appendChild(s);
+
+        var eventRightTitle = document.createElement('p');
+        eventRightTitle.className = "eventTitleRight";
+        var t = document.createTextNode(monthNameDate(event.start));
+        eventRightTitle.appendChild(t);
+
+        eventContainer.appendChild(eventLeftTitle);
+        eventContainer.appendChild(eventCenterTitle);
+        eventContainer.appendChild(eventRightTitle);
 
         // Images
         var eventImageContainer = document.createElement("a");
@@ -173,7 +209,7 @@ function createEventList(id, eventList) {
         eventImageContainer.appendChild(eventImage);
 
         var pastEvents = document.getElementById(id);
-        pastEvents.appendChild(eventTitle);
+        pastEvents.appendChild(eventContainer);
         pastEvents.appendChild(eventImageContainer);
 
     }
