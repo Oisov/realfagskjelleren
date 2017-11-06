@@ -18,6 +18,10 @@ body {
 	width: 50%;
 }
 
+p {
+    text-align: left;
+}
+
 /* Contained by Header tag START */
 #header {
 	position: relative;
@@ -211,5 +215,21 @@ hr {
     padding-right: 10px;
     font-size: 1em;
     font-weight: bold;
+}
+
+
+/* Center images left and right on the about us page */
+#container{
+    width: 100%;
+}
+
+.floated_left{
+    float: left;
+    width: 50%;
+}
+
+.floated_right{
+    float: left;
+    width: 50%;
 }
 
