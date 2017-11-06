@@ -7,6 +7,7 @@ document.getElementById("terningClose").addEventListener("click", closeTerning);
 document.getElementById("terningButton").addEventListener("click", nyttKast);
 
 function openFinnToern() {
+  shuffleItAll();
   var modal = document.getElementById("finnToernModal");
   var modalBox = document.getElementById("finnToernBox");
   var modalHeader = document.getElementById("finnToernHeader");
@@ -25,6 +26,7 @@ function closeFinnToern() {
   modalBox.style.display = "none";
   modalHeader.style.display = "none";
   modalImg.style.display = "none";
+  modalImg.src = "./img/games/kort/red_joker.png";
 }
 
 function openTerning() {
@@ -47,19 +49,41 @@ function closeTerning() {
   modalHeader.style.display = "none";
   modalImg.style.display = "none";
 }
-
-var kortstokk = [];
-for (i = 2; i < 11; i++) {
-  kortstokk.push(i+"_of_clubs.png");
-  kortstokk.push(i+"_of_diamonds.png");
-  kortstokk.push(i+"_of_hearts.png");
-  kortstokk.push(i+"_of_spades.png");
+function open4chan() {
+  shuffleItAll2();
+  var modal = document.getElementById("finnToernModal");
+  var modalBox = document.getElementById("finnToernBox");
+  var modalHeader = document.getElementById("finnToernHeader");
+  var modalImg = document.getElementById("finnToernImg");
+  modal.style.display = "block";
+  modalBox.style.display = "block";
+  modalHeader.style.display = "block";
+  modalImg.style.display = "block";
 }
-var korttype = ["ace","jack","king","queen"];
-var kortnavn = ["clubs","diamonds","hearts","spades"];
-for (i = 0; i < 4; i++) {
-  for (j = 0; j < 4; j++) {
-    kortstokk.push(korttype[j]+"_of_"+kortnavn[i]+".png");
+function close4chan() {
+  var modal = document.getElementById("4chanModal");
+  var modalBox = document.getElementById("4chanBox");
+  var modalHeader = document.getElementById("4chanHeader");
+  var modalImg = document.getElementById("4chanImg");
+  modal.style.display = "none";
+  modalBox.style.display = "none";
+  modalHeader.style.display = "none";
+  modalImg.style.display = "none";
+}
+var kortstokk = [];
+function shuffleItAll() {
+  for (i = 2; i < 11; i++) {
+    kortstokk.push(i+"_of_clubs.png");
+    kortstokk.push(i+"_of_diamonds.png");
+    kortstokk.push(i+"_of_hearts.png");
+    kortstokk.push(i+"_of_spades.png");
+  }
+  var korttype = ["ace","jack","king","queen"];
+  var kortnavn = ["clubs","diamonds","hearts","spades"];
+  for (i = 0; i < 4; i++) {
+    for (j = 0; j < 4; j++) {
+      kortstokk.push(korttype[j]+"_of_"+kortnavn[i]+".png");
+    }
   }
 }
 
