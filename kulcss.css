@@ -9,7 +9,8 @@ html, body {
 
 html {
 	width: 100%;
-	background-color: orange;
+	/* background-color: orange; */
+	background-color: #ff8c00;
   overflow-y: scroll;
 }
 
@@ -145,9 +146,9 @@ p {
 	padding: 0 3%;
 }
 hr {
-	color: orange;
-	background-color: orange;
-	border-color: orange;
+	  color: #ff8c00;
+	  background-color: #ff8c00;
+	  border-color: #ff8c00;
 }
 
 /* Denne og neste brukes til å få kartet til å se bra ut: */
