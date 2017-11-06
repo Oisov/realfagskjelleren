@@ -6,7 +6,13 @@ document.getElementById("terningIcon").addEventListener("click", openTerning);
 document.getElementById("terningClose").addEventListener("click", closeTerning);
 document.getElementById("terningButton").addEventListener("click", nyttKast);
 
+document.getElementById("4chanIcon").addEventListener("click", open4chan);
+document.getElementById("4chanClose").addEventListener("click", close4chan);
+document.getElementById("4chanButton").addEventListener("click", nytt4chankort);
+
+
 function openFinnToern() {
+  shuffleItAll();
   var modal = document.getElementById("finnToernModal");
   var modalBox = document.getElementById("finnToernBox");
   var modalHeader = document.getElementById("finnToernHeader");
@@ -25,6 +31,7 @@ function closeFinnToern() {
   modalBox.style.display = "none";
   modalHeader.style.display = "none";
   modalImg.style.display = "none";
+  modalImg.src = "./img/games/kort/red_joker.png";
 }
 
 function openTerning() {
@@ -48,18 +55,50 @@ function closeTerning() {
   modalImg.style.display = "none";
 }
 
-var kortstokk = [];
-for (i = 2; i < 11; i++) {
-  kortstokk.push(i+"_of_clubs.png");
-  kortstokk.push(i+"_of_diamonds.png");
-  kortstokk.push(i+"_of_hearts.png");
-  kortstokk.push(i+"_of_spades.png");
+function open4chan() {
+  shuffleItAll2();
+  var modal = document.getElementById("4chanModal");
+  var modalBox = document.getElementById("4chanBox");
+  var modalHeader = document.getElementById("4chanHeader");
+  var modalImg = document.getElementById("4chanImg");
+  modal.style.display = "block";
+  modalBox.style.display = "block";
+  modalHeader.style.display = "block";
+  modalImg.style.display = "block";
+  modalImg.src = "./img/games/4chan/4chanImg.jpg";
 }
-var korttype = ["ace","jack","king","queen"];
-var kortnavn = ["clubs","diamonds","hearts","spades"];
-for (i = 0; i < 4; i++) {
-  for (j = 0; j < 4; j++) {
-    kortstokk.push(korttype[j]+"_of_"+kortnavn[i]+".png");
+function close4chan() {
+  var modal = document.getElementById("4chanModal");
+  var modalBox = document.getElementById("4chanBox");
+  var modalHeader = document.getElementById("4chanHeader");
+  var modalImg = document.getElementById("4chanImg");
+  modal.style.display = "none";
+  modalBox.style.display = "none";
+  modalHeader.style.display = "none";
+  modalImg.style.display = "none";
+}
+
+var kortstokk = [];
+function shuffleItAll() {
+  for (i = 2; i < 11; i++) {
+    kortstokk.push(i+"_of_clubs.png");
+    kortstokk.push(i+"_of_diamonds.png");
+    kortstokk.push(i+"_of_hearts.png");
+    kortstokk.push(i+"_of_spades.png");
+  }
+  var korttype = ["ace","jack","king","queen"];
+  var kortnavn = ["clubs","diamonds","hearts","spades"];
+  for (i = 0; i < 4; i++) {
+    for (j = 0; j < 4; j++) {
+      kortstokk.push(korttype[j]+"_of_"+kortnavn[i]+".png");
+    }
+  }
+}
+
+var fchankort = [];
+function shuffleItAll2() {
+  for (i = 1; i < 169; i++) {
+    fchankort.push(i + ".jpg");
   }
 }
 
@@ -78,12 +117,21 @@ function nyttKort() {
   }
   } else {
     document.getElementById("finnToernButton").innerHTML = "Ikke flere kort";
-    document.getElementById("finnToernHeader").innerHTML = kortstokk.length;
   }
 }
 
 function nyttKast() {
   var random2 = Math.floor(Math.random() * 6) + 1;
   document.getElementById("terningImg").src = "./img/games/terning/dice" + random2 + ".png";
-  document.getElementById("terningHeader").innerHTML = "./img/games/terning/dice" + random2 + ".png";
+}
+
+function nytt4chankort() {
+    if (fchankort.length > 0) {
+        random2 = Math.floor(Math.random() * fchankort.length);
+        document.getElementById("4chanImg").src = "./img/games/4chan/cards/" + fchankort[random2];
+        fchankort.splice(random2, 1);
+    } else {
+        document.getElementById("4chanButton").innerHTML = "Ikke flere kort";
+
+    }
 }
