@@ -18,4 +18,11 @@ fetch(eventUrl).then(function(response) {
     var pastEvents = getPastEvents(events);
     var nowAndFutureEvents = nowEvent.push.apply(nowEvent, futureEvents);
 
-   
+    createEventList("pastEventsList", pastEvents);
+    createEventList("futureEventsList", futureEvents);
+
+    /* futureEvents = [];*/
+    /* nextEvent = [];*/
+    /* nowEvent = [];*/
+
+});
