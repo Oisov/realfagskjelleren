@@ -21,6 +21,7 @@ function initializeClock(id, endtime) {
     var secondsSpan = clock.querySelector('.seconds');
 
     function updateClock() {
+        console.log("Inside updateclock");
         var t = getTimeRemaining(endtime);
 
         daysSpan.innerHTML = t.days;

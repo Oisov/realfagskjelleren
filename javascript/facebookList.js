@@ -1,5 +1,4 @@
 var eventUrl = "https://graph.facebook.com/v2.10/realfagskjelleren?fields=events%7Bname%2Cid%2Cstart_time%2Cend_time%2Ccover%7D&access_token=1933189180280805%7COQMRkHbH7bd80Xwlg9CW6BJECLQ"
-
 var openMonths = [0, 1, 2, 3, 7, 8, 9, 10];
 var fridayID = 5;
 var saturdayID = 6;

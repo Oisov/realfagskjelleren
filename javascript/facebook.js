@@ -1,10 +1,9 @@
 var eventUrl = "https://graph.facebook.com/v2.10/realfagskjelleren?fields=events%7Bname%2Cid%2Cstart_time%2Cend_time%2Ccover%7D&access_token=1933189180280805%7COQMRkHbH7bd80Xwlg9CW6BJECLQ"
-
 var openMonths = [0, 1, 2, 3, 7, 8, 9, 10];
 var fridayID = 5;
 var saturdayID = 6;
 
-function isClosedForSemester(currentTime = new Date()) {
+function isClosedForSemester(currentTime) {
     var month = currentTime.getMonth();
     var date = currentTime.getDate();
     if (month == 0 && date < 6) {
@@ -25,7 +24,6 @@ function getNextDayOfWeek(date, dayOfWeek) {
     resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7);
     return resultDate;
 }
-
 
 function getNextLegalFriday(date) {
     // Friday is the fifth day of the week
@@ -145,12 +143,12 @@ fetch(eventUrl).then(function(response) {
     // Yay, `j` is a JavaScript object
 
     var events = parseJSON2list(j.events.data);
-
-    /* console.log(events["0"].start);*/
-    /* console.log(events["0"].start.setDate(events["0"].start.getDate()-8));*/
-    /* console.log(events["0"].start.setHours(events["0"].start.getHours()-15));*/
-    /* console.log(events["0"].end.setDate(events["0"].end.getDate()-8));*/
-    /* console.log(events["0"].end.setHours(events["0"].end.getHours()-15));*/
+    // console.log("Neste event");
+    // console.log(events["0"].start);
+    //  console.log(events["0"].start.setDate(events["0"].start.getDate()-8));
+    //  console.log(events["0"].start.setHours(events["0"].start.getHours()-15));
+    //  console.log(events["0"].end.setDate(events["0"].end.getDate()-8));
+    //  console.log(events["0"].end.setHours(events["0"].end.getHours()-15));
 
     var futureEvents = getFutureEvents(events);
     var nextEvent = getNextEvent(futureEvents);

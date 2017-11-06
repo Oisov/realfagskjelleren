@@ -1,12 +1,12 @@
-var isOpen = false;
+var menuOpen = false;
 
 function toggleMenu(){
-    if(isOpen) {
+    if(menuOpen) {
       document.getElementById("mobile_navwrap").style.display = "none";
-      isOpen = false;
+      menuOpen = false;
     }
     else{
       document.getElementById("mobile_navwrap").style.display = "block";
-      isOpen = true;
+      menuOpen = true;
     }
 }
