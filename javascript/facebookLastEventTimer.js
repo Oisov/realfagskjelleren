@@ -63,18 +63,11 @@ fetch(eventUrl).then(function(response) {
         if (nowEvent.length == 0) {
             var nextEvent = getNextEvent(futureEvents);
 
-            var monthDate = nextEvent.start.getDate();
-            var monthName = nextEvent.start.toLocaleString("no", {
-                month: "long"
-            });
-            var norwegianDate = monthDate + ". " + monthName;
-
-
             initializeClock("futureEvent", nextEvent.start);
             document.getElementById("timerText").innerHTML = "Kjelleren åpner om:";
         } else {
+
             var nextEvent = nowEvent;
-            var norwegianDate = "I dag";
             var temp = document.getElementById("futureEvent");
             temp.id = "notFutureEvent";
 
@@ -83,21 +76,24 @@ fetch(eventUrl).then(function(response) {
             document.getElementById("nextEvent").innerHTML = "Arrangement:";
         }
 
-        document.getElementById("eventTitle").innerHTML = nextEvent.name;
-        document.getElementById("eventDate").innerHTML = " - " + norwegianDate;
+        // document.getElementById("eventTitle").innerHTML = nextEvent.name;
+        // document.getElementById("eventDate").innerHTML = " - " + norwegianDate;
 
-        document.getElementById("coverImage").src = nextEvent.image;
+        // document.getElementById("coverImage").src = nextEvent.image;
+
+        createEventList("nextEventImageAndTitle", [nextEvent]);
+
         // document.getElementById("coverImage").onclick=function(){
             // window.location = nextEvent.url;
         // };
         // document.getElementById("cover").href = "";
-        document.getElementById("cover").href = nextEvent.url;
+        // document.getElementById("cover").href = nextEvent.url;
 
 
         document.getElementById("nextEvent").style.display = "block";
-        document.getElementById("eventTitle").style.display = "inline-block";
-        document.getElementById("eventDate").style.display = "inline-block";
+        // document.getElementById("eventTitle").style.display = "inline-block";
+        // document.getElementById("eventDate").style.display = "inline-block";
         document.getElementById("timer").style.display = "inline";
-        document.getElementById("cover").style.display = "inline";
+        // document.getElementById("cover").style.display = "inline";
     }
 });

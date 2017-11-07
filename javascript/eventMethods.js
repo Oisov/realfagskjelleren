@@ -171,6 +171,7 @@ function pad(value, length) {
 
 function createEventList(id, eventList) {
     var numberOfEvents = eventList.length;
+    console.log(numberOfEvents);
     for (var i = 0; i < numberOfEvents; i++) {
         var event = eventList[i];
 

@@ -176,7 +176,7 @@ hr {
 }
 
 /* Code to make the event images fit content */
-#futureEventsList img, #pastEventsList img  {
+#futureEventsList img, #pastEventsList img, #nextEventImageAndTitle img  {
     /*css code*/
     width: 100%;
 }
