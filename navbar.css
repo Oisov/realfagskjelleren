@@ -14,7 +14,7 @@
 
 #nav_links li {
   display: inline-block;
-	border-right: 1px solid ff8c00;
+	border-right: 1px solid orange;
 }
 
 #nav_links li:last-child {
@@ -23,7 +23,7 @@
 #nav_links li a {
   display: inline-block;
 	padding: 15px 15px;
-	color: ff8c00;
+	color: orange;
 	text-decoration: none;
 }
 #nav_links li a:hover:not(.active) {
@@ -39,13 +39,13 @@
 }
 #mobile_nav_links li  {
   width: 100%;
-  border-bottom: 2px solid ff8c00;
+  border-bottom: 2px solid orange;
 }
 #mobile_nav_links li a {
   width: 100%;
   display: inline-block;
 	padding: 6.25% 0;
-	color: ff8c00;
+	color: orange;
 	text-decoration: none;
 }
 #mobile_nav_links li a:hover:not(.active) {
