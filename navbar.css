@@ -51,3 +51,6 @@
 #mobile_nav_links li a:hover:not(.active) {
 	background: linear-gradient(#D8D2D2, #605858);
 }
+#mobile_nav_links li:last-child {
+	border: none;
+}

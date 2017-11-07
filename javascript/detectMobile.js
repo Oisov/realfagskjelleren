@@ -28,6 +28,8 @@ function smallOrMobile(mq) {
         temp.id = "mobile_header";
         temp = document.getElementById("banner");
         temp.id = "mobile_banner";
+        temp = document.getElementById("bannerwrap");
+        temp.id = "mobile_bannerwrap";
         temp = document.getElementById("logo");
         temp.id = "mobile_logo";
         temp.src = "./img/logo.png";
@@ -56,6 +58,8 @@ function smallOrMobile(mq) {
 
         var temp = document.getElementById("mobile_header");
         temp.id = "header";
+        temp = document.getElementById("mobile_bannerwrap");
+        temp.id = "bannerwrap";
         temp = document.getElementById("mobile_banner");
         temp.id = "banner";
         temp = document.getElementById("mobile_logo");
