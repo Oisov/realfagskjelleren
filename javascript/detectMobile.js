@@ -6,7 +6,7 @@ if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elain
 
 // media query event handler
 if (matchMedia) {
-    const mq = window.matchMedia("(min-width: 750px)");
+    const mq = window.matchMedia("(min-width: 1000px)");
     mq.addListener(smallOrMobile);
     smallOrMobile(mq);
 }
@@ -20,7 +20,7 @@ function smallOrMobile(mq) {
         // Screen is now in small modus
         isSmallMode = true;
 
-        // window width is less than 500px or Mobile device
+        // window width is less than 1000px or Mobile device
         document.getElementById("logo").src = "./img/logo.png";
         document.getElementById("logo").style.display = "inline-block";
 
@@ -49,7 +49,7 @@ function smallOrMobile(mq) {
         temp.style.width = "100%";
 
     } else if (isSmallMode) {
-        // window width is atleast 500px and not mobile
+        // window width is atleast 1000px and not mobile
         // AND windowssize was previously small
         document.getElementById("mobile_logo").src = "./img/banner.png";
         document.getElementById("mobile_logo").style.display = "inline";
