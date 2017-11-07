@@ -206,6 +206,7 @@ function createEventList(id, eventList) {
         // Images
         var eventImageContainer = document.createElement("a");
         eventImageContainer.href = event.url;
+        eventImageContainer.target = "_blank";
         var eventImage = imgCreate(event.image, event.name, event.name);
         eventImageContainer.appendChild(eventImage);
 
