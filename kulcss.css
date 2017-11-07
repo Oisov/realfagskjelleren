@@ -31,8 +31,6 @@ p {
 }
 #bannerwrap {
 	/*height should be 15% of total, so 60% of 25%*/
-
-		border: 5px solid red;
 	height: 60%;
 	position: relative;
 }
@@ -102,7 +100,6 @@ p {
 /* Contained by Header tag END */
 /* Contained by Content tag START */
 #content {
-	z-index: 1;
 	position: relative;
 	text-align: center;
 	color: white;
