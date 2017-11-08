@@ -100,6 +100,7 @@ p {
 /* Contained by Header tag END */
 /* Contained by Content tag START */
 #content {
+	width: 100%;
 	position: relative;
 	text-align: center;
 	color: white;
@@ -225,15 +226,28 @@ hr {
 
 /* Center images left and right on the about us page */
 #container{
-    width: 100%;
+  width: 100%;
+	height: 100%;
 }
 
+.right {
+	margin-left: 1%;
+	vertical-align: top;
+	display: inline-block;
+	width: 47%;
+}
+.left {
+	margin-right: 1%;
+	vertical-align: top;
+	display: inline-block;
+	width: 47%;
+}
 .floated_left{
-    float: left;
-    width: 50%;
+	float: left;
+  width: 50%;
 }
 
 .floated_right{
-    float: left;
-    width: 50%;
+	float: left;
+  width: 50%;
 }
