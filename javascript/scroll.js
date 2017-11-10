@@ -1,10 +1,7 @@
 $(document).ready(function() {
 
   $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the
-      //nav bar to stick.
-      console.log($(window).scrollTop())
+    // Fixes the position of the navbar if you scroll past the banner
     if ($(window).scrollTop() > $("#bannerwrap").height()) {
       $('#navbar').addClass('navbar-fixed');
     }
