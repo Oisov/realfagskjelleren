@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gjestebok>
+    <innlegg>
+        <navn> Test </navn>
+        <melding> Test melding </melding>
+        <dato> 06.11.2017 </dato>
+    </innlegg>
+
+    <innlegg>
+        <navn> Test2 </navn>
+        <melding> Test melding2 </melding>
+        <dato> 06.11.2017 </dato>
+    </innlegg>
+
+    <innlegg>
+        <navn> Test3 </navn>
+        <melding> Test melding3 </melding>
+        <dato> 06.11.2017 </dato>
+    </innlegg>
+
+    <innlegg>
+        <navn> Test4 </navn>
+        <melding> Test melding4 </melding>
+        <dato> 06.11.2017 </dato>
+    </innlegg>
+
+    <innlegg>
+        <navn> Test5 </navn>
+        <melding> Test melding5 </melding>
+        <dato> 06.11.2017 </dato>
+    </innlegg>
+
+    <innlegg>
+        <navn> Test6 </navn>
+        <melding> Test melding </melding>
+        <dato> 06.11.2017 </dato>
+    </innlegg>
+
+    <innlegg>
+        <navn> Test7 </navn>
+        <melding> Test melding2 </melding>
+        <dato> 06.11.2017 </dato>
+    </innlegg>
+
+    <innlegg>
+        <navn> Test8 </navn>
+        <melding> Test melding3 </melding>
+        <dato> 06.11.2017 </dato>
+    </innlegg>
+
+    <innlegg>
+        <navn> Test9 </navn>
+        <melding> Test melding4 </melding>
+        <dato> 06.11.2017 </dato>
+    </innlegg>
+
+    <innlegg>
+        <navn> Test10 </navn>
+        <melding> Test melding5 </melding>
+        <dato> 06.11.2017 </dato>
+    </innlegg>
+</gjestebok>

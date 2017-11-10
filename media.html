@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Author: Øystein, Knut, Jørgen og Simon
+<!-- Author: Øistein, Knut, Jørgen og Simon
 Date: September, 2017
 Purpose: Design Guidelines
 Filename: P2_design.html
@@ -7,37 +7,40 @@ Filename: P2_design.html
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Realfagskjelleren</title>
-  <link href="kulcss.css" rel="stylesheet" type="text/css">
-  <link href="navbar.css" rel="stylesheet" type="text/css">
-  <link rel="icon" href="./img/favicon.ico">
+    <meta charset="utf-8">
+    <title>Realfagskjelleren</title>
+    <link href="kulcss.css" rel="stylesheet" type="text/css">
+    <link href="navbar.css" rel="stylesheet" type="text/css">
+    <link href="temp.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="./img/favicon.ico">
 </head>
 
 <body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
   </script>
-  <div id="header"> <!-- Header start -->
-    <div id="bannerwrap">
-      <div id="banner">
-        <img id="navbut" src="./img/button_new.png" alt="Logo">
-        <img id="logo" src="./img/banner.png" onclick="toggleMenu()">
+  <div id="header">
+      <!-- Header start -->
+      <div id="bannerwrap">
+          <div id="banner">
+              <img id="navbut" src="./img/button_new.png" alt="Logo" onclick="toggleMenu()">
+              <img id="logo" src="./img/banner.png">
+          </div>
       </div>
-    </div>
-    <div id="navwrap">
-      <nav id="navbar">
-        <ul id="nav_links">
-          <li><a href="./index.html">Home</a></li
-          ><li><a href="./index.html">Events</a></li
-          ><li><a href="./map.html">Find Us</a></li
-          ><li><a href="./media.html" class="active">Pictures</a></li
-          ><li><a href="./contact.html">Contact Us</a></li
-          ><li><a href="./games.html">Games</a></li>
-        </ul>
-        </nav>
+      <div id="navwrap">
+          <nav id="navbar">
+              <ul id="nav_links">
+                  <li><a href="./index.html">Hjem</a></li
+                  ><li><a href="./events.html">Events</a></li
+                  ><li><a href="./map.html">Kart</a></li
+                  ><li><a class="active">Media</a></li
+                  ><li><a href="./contact.html">Om oss</a></li
+                  ><li><a href="./games.html">Spill</a></li>
+              </ul>
+          </nav>
       </div>
-    </div><!-- Header end -->
+  </div>
+    <!-- Header end -->
 
     <div id="content">
       <link href="media.css" rel="stylesheet" type="text/css">

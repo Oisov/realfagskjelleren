@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Author: Øystein, Knut, Jørgen og Simon
+<!-- Author: Øistein, Knut, Jørgen og Simon
 Date: September, 2017
 Purpose: Design Guidelines
 Filename: P2_design.html
@@ -13,9 +13,6 @@ Filename: P2_design.html
     <link href="navbar.css" rel="stylesheet" type="text/css">
     <link href="temp.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="./img/favicon.ico">
-    <script src="./javascript/countdownTimer.js" type="text/javascript"></script>
-    <script src="./javascript/facebook.js" type="text/javascript"></script>
-
 </head>
 
 <body>
@@ -33,12 +30,12 @@ Filename: P2_design.html
         <div id="navwrap">
             <nav id="navbar">
                 <ul id="nav_links">
-                    <li><a href="./index.html" class="active">Home</a></li>
-                    <li><a href="./events.html">Events</a></li>
-                    <li><a href="./map.html">Find Us</a></li>
-                    <li><a href="./media.html">Pictures</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                    <li><a href="./games.html">Games</a></li>
+                    <li><a class="active">Hjem</a></li
+                    ><li><a href="./events.html">Events</a></li
+                    ><li><a href="./map.html">Kart</a></li
+                    ><li><a href="./media.html">Media</a></li
+                    ><li><a href="./contact.html">Om oss</a></li
+                    ><li><a href="./games.html">Spill</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,7 +43,11 @@ Filename: P2_design.html
     <!-- Header end -->
 
     <div id="content">
+        <hr>
         <h1 id="author">Realfagskjelleren</h1>
+        <hr>
+        <br>
+        <br>
         <p id="noEvent">
             Kjelleren har ikke annonsert noen fremtidige arrangementer, du kan finne ut mer om når vi har åpent på
             <a href="https://www.facebook.com/pg/Realfagskjelleren">Realfagskjelleren sin
@@ -77,7 +78,13 @@ Filename: P2_design.html
         </div>
 
 
+        <br>
+        <br>
+        <br>
+        <hr>
         <h1 id="nextEvent">Neste Arrangement:</h1>
+        <hr>
+        <br>
 
         <div class="eventTitleWrapper">
             <div id="eventTitle"></div>
@@ -86,6 +93,9 @@ Filename: P2_design.html
 
         <a id="cover" href="https://www.facebook.com/Realfagskjelleren" target="_blank">
     <img id="coverImage" alt="Cover bildet for neste event"> </a>
+
+    <div id="nextEventImageAndTitle">
+    </div>
 
     </div>
 
@@ -103,6 +113,9 @@ Filename: P2_design.html
         </div>​
     </div>
 
+    <script src="./javascript/countdownTimer.js" type="text/javascript"></script>
+    <script src="./javascript/eventMethods.js" type="text/javascript"></script>
+    <script src="./javascript/facebookLastEventTimer.js" type="text/javascript"></script>
     <script src="./javascript/detectMobile.js"></script>
     <script src="./javascript/navigationbar.js"></script>
 </body>

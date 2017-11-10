@@ -1,0 +1,23 @@
+.gjestebok {
+    background-color: black;
+}
+.innlegg {
+    margin: 2%;
+    width: 60%;
+    background-color: darkorange;
+    border-radius: 5px;
+}
+.message {
+    margin: 1%;
+    padding: 6%;
+    background-color: orange;
+    color: black;
+}
+.name {
+    font-size: 25px;
+    color: black;
+}
+button {
+    width: 30%;
+    height: 20%;
+}
