@@ -10,7 +10,6 @@ document.getElementById("4chanIcon").addEventListener("click", open4chan);
 document.getElementById("4chanClose").addEventListener("click", close4chan);
 document.getElementById("4chanButton").addEventListener("click", nytt4chankort);
 
-
 function openFinnToern() {
   shuffleItAll();
   var modal = document.getElementById("finnToernModal");

@@ -3,6 +3,7 @@ var openMonths = [0, 1, 2, 3, 7, 8, 9, 10];
 var fridayID = 5;
 var saturdayID = 6;
 
+// Checks if it is closed for the semester for a given date
 function isClosedForSemester(currentTime = new Date()) {
     var month = currentTime.getMonth();
     var date = currentTime.getDate();
@@ -19,13 +20,14 @@ function isClosedForSemester(currentTime = new Date()) {
     }
 }
 
+// Returns the date of the next occurence of a dayOfWeek. 0 <= dayOfWeek <= 6
 function getNextDayOfWeek(date, dayOfWeek) {
     var resultDate = new Date(date.getTime());
     resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7);
     return resultDate;
 }
 
-
+// Finds the next Friday Realfagskjelleren will be open
 function getNextLegalFriday(date) {
     // Friday is the fifth day of the week
     var nextFriday = getNextDayOfWeek(date, fridayID);
@@ -74,6 +76,7 @@ function isEventPast(startTime, endTime) {
     }
 }
 
+// Parse a JSON file of events into an event list
 function parseJSON2list(jsonFile) {
     events = []
     for (let key in jsonFile) {
@@ -136,6 +139,7 @@ function getOpeningHour(date) {
     return opening
 }
 
+
 function getClosingHour(date) {
     var closing = new Date(date.getFullYear(),
         date.getMonth(),
@@ -148,6 +152,7 @@ function getClosingHour(date) {
     return closing
 }
 
+// Creates an image element with provided parameters
 function imgCreate(src, alt, title) {
     var img = document.createElement('img');
     img.src = src;
@@ -156,6 +161,7 @@ function imgCreate(src, alt, title) {
     return img;
 }
 
+// Returns a formated string of the date provided
 function monthNameDate(date) {
     var monthDate = date.getDate();
     var monthName = date.toLocaleString("no", {
@@ -165,54 +171,62 @@ function monthNameDate(date) {
 
 }
 
+// Adds zeroes in front of value to match the length of length.
+// Used for time formating
 function pad(value, length) {
     return (value.toString().length < length) ? pad("0"+value, length):value;
 }
 
+// Takes in an id and a list of events, distributes and formats
+// relevant info before adding to list
 function createEventList(id, eventList) {
     var numberOfEvents = eventList.length;
     console.log(numberOfEvents);
     for (var i = 0; i < numberOfEvents; i++) {
         var event = eventList[i];
 
-        // title
+        // Create the container for event information
         var eventContainer = document.createElement('div');
         eventContainer.className = "eventTitleContainer";
 
-        // var eventTitle = document.createElement("div");
-
+        // Left element of the event information, the event time
         var eventLeftTitle = document.createElement('p');
         eventLeftTitle.className = "eventTitleLeft";
-        var eventStart =
-            pad(event.start.getHours(), 2)+":"+pad(event.start.getMinutes(), 2);
+        var eventStart = pad(event.start.getHours(), 2) + ":" +
+          pad(event.start.getMinutes(), 2);
         var eventEnd = pad(event.end.getHours(), 2)+":"+pad(event.end.getMinutes(),2);
         var r = document.createTextNode(eventStart + " - " + eventEnd)
         eventLeftTitle.appendChild(r);
 
+        // Center element of the event information, the event name
         var eventCenterTitle = document.createElement('p');
         eventCenterTitle.className = "eventTitleCenter";
         var s = document.createTextNode(event.name);
         eventCenterTitle.appendChild(s);
 
+        // Right element of the event information, the event date
         var eventRightTitle = document.createElement('p');
         eventRightTitle.className = "eventTitleRight";
         var t = document.createTextNode(monthNameDate(event.start));
         eventRightTitle.appendChild(t);
 
+        // Append information to container
         eventContainer.appendChild(eventLeftTitle);
         eventContainer.appendChild(eventCenterTitle);
         eventContainer.appendChild(eventRightTitle);
 
-        // Images
+        // Create container for event image
         var eventImageContainer = document.createElement("a");
         eventImageContainer.href = event.url;
         eventImageContainer.target = "_blank";
+
+        // Create image from event and add to container
         var eventImage = imgCreate(event.image, event.name, event.name);
         eventImageContainer.appendChild(eventImage);
 
+        // Add the event info and image to parameter id
         var pastEvents = document.getElementById(id);
         pastEvents.appendChild(eventContainer);
         pastEvents.appendChild(eventImageContainer);
-
     }
 }

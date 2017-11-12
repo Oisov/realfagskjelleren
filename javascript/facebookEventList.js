@@ -1,15 +1,15 @@
+  // Fetch events from facebook
 fetch(eventUrl).then(function(response) {
-    // Convert to JSON
-    return response.json();
+  // Convert to JSON
+  return response.json();
 }).then(function(j) {
-    // Yay, `j` is a JavaScript object
-
-    var events = parseJSON2list(j.events.data);
-    var futureEvents = getFutureEvents(events);
-    var nowEvent = getNowEvent(events);
-    var pastEvents = getPastEvents(events);
-    var nowAndFutureEvents = nowEvent.push.apply(nowEvent, futureEvents);
-
-    createEventList("pastEventsList", pastEvents);
-    createEventList("futureEventsList", futureEvents);
+  // Parse events and classify them
+  var events = parseJSON2list(j.events.data);
+  var futureEvents = getFutureEvents(events);
+  var nowEvent = getNowEvent(events);
+  var pastEvents = getPastEvents(events);
+  var nowAndFutureEvents = nowEvent.push.apply(nowEvent, futureEvents);
+  // Create lists of past and future events and add them to the id (first parameter)
+  createEventList("pastEventsList", pastEvents);
+  createEventList("futureEventsList", futureEvents);
 });

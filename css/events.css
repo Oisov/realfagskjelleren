@@ -23,7 +23,6 @@
     display: inline-block;
     font-weight: 100;
     text-align: center;
-    text-align: center;
     font-size: 30px;
 }
 
@@ -43,19 +42,16 @@
 
 #noEvent {
   font-size: 20px;
-  display: none;
   margin-top: 0.83em;
   margin-bottom: 0.83em;
 }
+
 #noEvent a:link, #noEvent a:visited {
   color: blue;
   text-decoration: none;
 }
-#nowEvent {
-    display: none;
-}
 
-#cover {
+#nowEvent, #cover, #timer, #nextEvent, #eventDate, #eventTitle, #noEvent {
     display: none;
 }
 
@@ -63,23 +59,46 @@
     width: 100%;
 }
 
-#timer {
-    display: none;
-}
-
 .eventTitleWrapper {
     margin: auto
 }
 
-#nextEvent {
-    display: none;
+/* Center eventitle, left time, right date */
+.eventTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    text-align:center;
 }
 
+.eventTitleLeft {
+    float:left;
+    width:20%;
+    text-align:left;
+    padding-left: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.eventTitleCenter {
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.eventTitleRight {
+    float:right;
+    width:20%;
+    text-align:right;
+    padding-right: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
 #eventTitle {
     margin: 0px auto;
     text-align: center;
     /* display: inline-block; */
-    display: none;
     font-size: 2em;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
@@ -92,7 +111,6 @@
     margin: 0px auto;
     text-align: center;
     /* display: inline-block; */
-    display: none;
     font-size: 1.17em;
     margin-top: 1em;
     margin-bottom: 1em;

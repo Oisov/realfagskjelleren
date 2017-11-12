@@ -3,24 +3,12 @@ fetch(eventUrl).then(function(response) {
     return response.json();
 }).then(function(j) {
     // Yay, `j` is a JavaScript object
-
     var events = parseJSON2list(j.events.data);
-    // console.log("Neste event");
-    // console.log(events["0"].start);
-    //  console.log(events["0"].start.setDate(events["0"].start.getDate()-8));
-    //  console.log(events["0"].start.setHours(events["0"].start.getHours()-15));
-    //  console.log(events["0"].end.setDate(events["0"].end.getDate()-8));
-    //  console.log(events["0"].end.setHours(events["0"].end.getHours()-15));
-
     var futureEvents = getFutureEvents(events);
     var nextEvent = getNextEvent(futureEvents);
     var nowEvent = getNowEvent(events);
-
-    /* futureEvents = [];*/
-    /* nextEvent = [];*/
-    /* nowEvent = [];*/
-
     var today = new Date();
+
     // Check if there are no events now or in the future. If that is true assume we
     // are open next legal friday
     if (futureEvents.length == 0 && nowEvent.length == 0) {
@@ -75,25 +63,9 @@ fetch(eventUrl).then(function(response) {
             initializeClock("notFutureEvent", nextEvent.end);
             document.getElementById("nextEvent").innerHTML = "Arrangement:";
         }
-
-        // document.getElementById("eventTitle").innerHTML = nextEvent.name;
-        // document.getElementById("eventDate").innerHTML = " - " + norwegianDate;
-
-        // document.getElementById("coverImage").src = nextEvent.image;
-
         createEventList("nextEventImageAndTitle", [nextEvent]);
 
-        // document.getElementById("coverImage").onclick=function(){
-            // window.location = nextEvent.url;
-        // };
-        // document.getElementById("cover").href = "";
-        // document.getElementById("cover").href = nextEvent.url;
-
-
         document.getElementById("nextEvent").style.display = "block";
-        // document.getElementById("eventTitle").style.display = "inline-block";
-        // document.getElementById("eventDate").style.display = "inline-block";
         document.getElementById("timer").style.display = "inline";
-        // document.getElementById("cover").style.display = "inline";
     }
 });

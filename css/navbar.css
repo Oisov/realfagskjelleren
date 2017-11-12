@@ -33,24 +33,3 @@
 .active {
   background: linear-gradient(#408C4D, #01380B);
 }
-
-#mobile_nav_links {
-  text-align: center;
-}
-#mobile_nav_links li  {
-  width: 100%;
-  border-bottom: 2px solid orange;
-}
-#mobile_nav_links li a {
-  width: 100%;
-  display: inline-block;
-	padding: 6.25% 0;
-	color: orange;
-	text-decoration: none;
-}
-#mobile_nav_links li a:hover:not(.active) {
-	background: linear-gradient(#D8D2D2, #605858);
-}
-#mobile_nav_links li:last-child {
-	border: none;
-}
