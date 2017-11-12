@@ -23,7 +23,7 @@ p {
     text-align: left;
 }
 
-/* Contained by Header tag START */
+/* Header START */
 #header {
 	position: relative;
 	height: 25%;
@@ -55,50 +55,11 @@ p {
 }
 #navwrap {
 	/*height should be 10% of total, so 40% of 25%*/
-
 	height: 40%;
 }
-#mobile_header {
-	position: relative;
-	height: 15%;
-	background-color: #ff8c00;
-}
-#mobile_bannerwrap {
-	position: absolute;
-	height: 75%;
-	width: 100%;
-	top: 50%;
-	transform: translateY(-50%);
-}
-#mobile_logo {
-	position: absolute;
-	right: 5%;
-	height: 100%;
-	width: auto;
-	display: inline-block;
-}
-#mobile_navbut {
-	position: absolute;
-	left: 5%;
-	height: 100%;
-	width: auto;
-	display: inline-block;
-}
-#mobile_navwrap {
-	z-index: 10;
-	position: relative;
-	top: 100%;
-	display: none;
-}
-#mobile_navbar {
-	height: 100%;
-	width: 40%;
-	position: fixed;
-	top: 15%;
-	background: linear-gradient(#605858, #1E1C1C);
-}
-/* Contained by Header tag END */
-/* Contained by Content tag START */
+/* Header END */
+
+/* Content START */
 #content {
 	width: 100%;
 	position: relative;
@@ -106,53 +67,6 @@ p {
 	color: white;
 	background-color: black;
 	min-height: 65%;
-}
-#mobile_content {
-	background-color: black;
-	min-height: 75%;
-	color: white;
-	text-align: center;
-}
-/* Contained by Content tag END */
-/* Contained by Footer tag START */
-#footer {
-	height: 10%;
-	width: 100%;
-	background-color: black;
-	position: relative;
-	text-align: center;
-}
-#images {
-	height: 60%;
-	width: 100%;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
-#mobile_footer {
-	height: 10%;
-	width: 100%;
-	background-color: black;
-	position: relative;
-	text-align: center;
-}
-#mobile_images {
-	height: 60%;
-	width: 100%;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
-.footerlogo {
-	height: 100%;
-	width: auto;
-	display: inline-block;
-	padding: 0 3%;
-}
-hr {
-	  color: #ff8c00;
-	  background-color: #ff8c00;
-	  border-color: #ff8c00;
 }
 
 /* Denne og neste brukes til å få kartet til å se bra ut: */
@@ -163,12 +77,6 @@ hr {
 	position: relative;
 	padding-top: 40%;
 	padding-bottom: 10%;
-
-	/*padding-top: 50%;*/
-	/*margin-top: 10%;
-	margin-left: -20%;
-	margin-right: -20%;
-	margin-bottom: 10%;*/
 }
 
 #google_maps iframe {
@@ -223,7 +131,6 @@ hr {
     font-weight: bold;
 }
 
-
 /* Center images left and right on the about us page */
 #container{
   width: 100%;
@@ -250,4 +157,33 @@ hr {
 .floated_right{
 	float: left;
   width: 50%;
+}
+
+/* Content END */
+
+/* Footer START */
+#footer {
+	height: 10%;
+	width: 100%;
+	background-color: black;
+	position: relative;
+	text-align: center;
+}
+#images {
+	height: 60%;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.footerlogo {
+	height: 100%;
+	width: auto;
+	display: inline-block;
+	padding: 0 3%;
+}
+hr {
+	  color: #ff8c00;
+	  background-color: #ff8c00;
+	  border-color: #ff8c00;
 }
