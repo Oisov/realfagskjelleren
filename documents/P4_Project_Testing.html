@@ -11,7 +11,7 @@ Filename: P2_design.html
     <meta charset="utf-8">
     <title>P4 Project Testing</title>
     <link href="./style.css" rel="stylesheet" type="text/css">
-    <link href="./barChart.scss" rel="stylesheet" type="text/scss">
+    <link href="./prism.css" rel="stylesheet" />
     <link rel="icon" href="./img/favicon.ico">
 </head>
 
@@ -425,6 +425,27 @@ Filename: P2_design.html
                     as mentioned previously nearly all users use a browser our site
                     supports.
                 </p><br>
+
+Stack Exchange suggests that the error comes from Safari not supporting fetch
+                and suggests applying
+                <pre><code class="language-javascript">
+    import 'whatwg-fetch'; 
+                </code></pre>
+
+                to the start of every javascript file using it. Alas, this
+                solution did not work for us. Another possible culprit was the countdownTimer.js
+                use of
+
+                <pre><code class="language-javascript">
+    String.prototype.padStart()
+                </code></pre>
+
+                as according to <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart">MDN
+                web docs</a> this feauture is not supported in Safari. However,
+                some more bug-testing proved that the countdown timer in fact
+                worked, and the problems was in fact related to <code>fetch</code>
+
                 <li>Image placement on the About us page</li>
 
                 <p>
@@ -478,6 +499,7 @@ Filename: P2_design.html
         the users were able to deduce that the event images were hyperlinks.
             </p><br>
 
+
         </section>
 
 
@@ -488,7 +510,7 @@ Filename: P2_design.html
         </section>
 
     </content>
-
+<script src="prism.js"></script>
 </body>
 
 

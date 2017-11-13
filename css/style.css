@@ -20,32 +20,8 @@ body {
 	width: 50%;
 }
 
-@font-face {
-    font-family: "Computer Modern";
-    src: url('../fonts/cmunss.otf');
-}
-
-@font-face {
-    font-family: "Computer Modern";
-    src: url('../fonts/cmunsx.otf');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Computer Modern";
-    src: url('../fonts/cmunsi.otf');
-    font-style: italic, oblique;
-}
-
-@font-face {
-    font-family: "Computer Modern";
-    src: url('../fonts/cmunbxo.otf');
-    font-weight: bold;
-    font-style: italic, oblique;
-}
-
 p {
-    font-family: "Computer Modern", Georgia, Palantino, serif;
+    font-family: "Computer Modern Serif", Georgia, Palantino, serif;
     font-size: 16px;
     text-align: left;
 }
@@ -150,7 +126,7 @@ p {
 }
 
 .right p{
-    font-family: "Computer Modern", Georgia, Palantino, serif;
+    font-family: "Computer Modern Serif", Georgia, Palantino, serif;
     font-size: 18px;
     text-align: left;
 }
