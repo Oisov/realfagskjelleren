@@ -58,8 +58,8 @@
   top: 20%;
   left: 20%;
   z-index: 1;
-  width: 60%;
-  height: 60%;
+  width: 62%;
+  height: 62%;
   background-color: rgba(5, 5, 5, 1);
   box-shadow: 10px 10px 20px black;
   border-radius: 20px;
@@ -80,8 +80,9 @@
 .modalImg {
   top: 20%;
   height: 70%;
-  margin: 1%;
   margin:auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .modalButton {
   cursor: pointer;
@@ -89,8 +90,8 @@
   width: 20%;
   height: 10%;
   font-size: 15px;
-  margin: 1%;
   margin:auto;
+  padding-bottom: 5px;
 }
 .modalClose {
   color: black;
