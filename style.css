@@ -69,7 +69,7 @@ p {
 	min-height: 65%;
 }
 
-/* Denne og neste brukes til å få kartet til å se bra ut: */
+/* Makes the embedded map appear properly */
 #google_maps {
 	margin: auto;
 	width: 60%;
