@@ -7,7 +7,7 @@ var menuNames = [
   name: "Kart"},
   {ref: "media.html",
   name: "Media"},
-  {ref: "contact.html",
+  {ref: "about.html",
   name: "Om oss"},
   {ref: "games.html",
   name: "Spill"}
