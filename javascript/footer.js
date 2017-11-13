@@ -1,3 +1,4 @@
+
 var div = document.createElement("div");
 div.id = "images";
 
@@ -14,11 +15,16 @@ a = makeLink("mailto:realfagskjellern-styre@list.stud.ntnu.no");
 a.appendChild(makeImage("./img/email.png", "Mail", "footerlogo"));
 div.appendChild(a);
 
-var container = document.getElementById("footer");
+// var container = document.getElementById("footer");
+var container = document.createElement("div");
+container.id="footer";
+
 var hr = document.createElement("hr");
 container.appendChild(hr);
 container.appendChild(div);
 
+var body = document.getElementsByTagName("BODY")[0];
+body.appendChild(container);
 
 function makeLink(href){
   var a = document.createElement("a");
