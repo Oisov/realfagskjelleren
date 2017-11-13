@@ -1,4 +1,4 @@
-  // Fetch events from facebook
+  // Fetch events from facebook entirely written by us
 fetch(eventUrl).then(function(response) {
   // Convert to JSON
   return response.json();
