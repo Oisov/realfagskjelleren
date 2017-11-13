@@ -22,8 +22,9 @@ body {
 
 p {
     font-family: "Computer Modern Serif", Georgia, Palantino, serif;
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
+    /* font-weight: bold; */
 }
 
 /* Header START */
@@ -97,10 +98,6 @@ p {
     width: 100%;
 }
 
-#pastEventsList img {
-    /*css code*/
-    width: 100%;
-}
 
 /* Center images left and right on the about us page */
 #container{
@@ -127,7 +124,7 @@ p {
 
 .right p{
     font-family: "Computer Modern Serif", Georgia, Palantino, serif;
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
 }
 
