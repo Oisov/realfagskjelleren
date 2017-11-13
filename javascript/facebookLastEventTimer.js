@@ -35,7 +35,6 @@ fetch(eventUrl).then(function(response) {
             var nextFriday = getNextLegalFriday(today);
         }
 
-        console.log(nextFriday);
         if (isOpen) {
             var temp = document.getElementById("futureEvent");
             temp.id = "notFutureEvent";

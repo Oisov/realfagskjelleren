@@ -14,7 +14,7 @@
 
 #nav_links li {
   display: inline-block;
-	border-right: 1px solid orange;
+	border-right: 1px solid darkorange;
   font-size: 20px;
 }
 
@@ -24,7 +24,7 @@
 #nav_links li a {
   display: inline-block;
 	padding: 15px 15px;
-	color: orange;
+	color: white;
 	text-decoration: none;
 }
 #nav_links li a:hover:not(.active) {
@@ -32,5 +32,5 @@
 }
 
 .active {
-  background: linear-gradient(#408C4D, #01380B);
+  background: darkorange;
 }

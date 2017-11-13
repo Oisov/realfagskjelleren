@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- Author: Øistein, Knut, Jørgen og Simon
-Date: September, 2017
-Purpose: Design Guidelines
-Filename: P2_design.html
+Date: November, 2017
+Purpose: Welcome viewers to Realfagskjelleren and show next opening
+Filename: index.html
    -->
 <html>
 
@@ -19,31 +19,12 @@ Filename: P2_design.html
 </head>
 
 <body>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
     </script>
-    <div id="header">
-        <!-- Header start -->
-        <div id="bannerwrap">
-            <div id="banner">
-                <img id="navbut" src="./img/button_new.png" alt="Logo" onclick="toggleMenu()">
-                <img id="logo" src="./img/banner.png" alt="Banner">
-            </div>
-        </div>
-        <div id="navwrap">
-            <nav id="navbar">
-                <ul id="nav_links">
-                    <li><a class="active">Hjem</a></li
-                    ><li><a href="./events.html">Events</a></li
-                    ><li><a href="./map.html">Kart</a></li
-                    ><li><a href="./media.html">Media</a></li
-                    ><li><a href="./contact.html">Om oss</a></li
-                    ><li><a href="./games.html">Spill</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <!-- Header end -->
+
+    <!-- Add Header -->
+    <script src="./javascript/header.js"></script>
+
 
     <div id="content">
         <hr>
@@ -102,27 +83,14 @@ Filename: P2_design.html
 
     </div>
 
-    <script src="./javascript/scroll.js"></script>
-    <div id="footer"></div>
+    <!-- Add footer -->
     <script src="./javascript/footer.js"></script>
 
-    <!-- <div id="footer">
-        <hr>
-        <div id="images">
-            <a href="https://www.facebook.com/Realfagskjelleren" target="_blank">
-          <img class="footerlogo" alt="Facebook" src="./img/facebook_new.png"/></a>
-            <a href="https://www.instagram.com/explore/tags/rkjeller/" target="_blank">
-          <img class="footerlogo" alt="Instagram" src="./img/temp_instagram.png"/></a>
-            <a href="mailto:realfagskjellern-styre@list.stud.ntnu.no">
-          <img class="footerlogo" alt="Mail" src="./img/email.png"/></a>
-        </div>​
-    </div> -->
-
+    <script src="./javascript/scroll.js"></script>
     <script src="./javascript/countdownTimer.js" type="text/javascript"></script>
     <script src="./javascript/eventMethods.js" type="text/javascript"></script>
     <script src="./javascript/facebookLastEventTimer.js" type="text/javascript"></script>
     <script src="./javascript/detectMobile.js"></script>
-    <script src="./javascript/navigationbar.js"></script>
 </body>
 
 </html>

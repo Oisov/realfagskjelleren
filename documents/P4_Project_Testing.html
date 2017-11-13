@@ -220,7 +220,7 @@ Filename: P2_design.html
                 <img src="./img/nextEvent.png" alt="figure 2: Representation of the
                       browsers used">
                 <figcaption>
-                    Figure 2: The representation of browsers used
+                    Figure 5: Users able to discover the name of the latest event.
                 </figcaption>
             </figure>
 
@@ -316,7 +316,7 @@ Filename: P2_design.html
                 how difficult it was using Realfagskjellerns website to answer
                 scenario 2">
                 <figcaption>
-                    Figure 5: How difficult was it to use Realfagskjellerens
+                    Figure 6: How difficult was it to use Realfagskjellerens
                 website to answer scenario 2?
                 </figcaption>
             </figure>
@@ -426,25 +426,26 @@ Filename: P2_design.html
                     supports.
                 </p><br>
 
-Stack Exchange suggests that the error comes from Safari not supporting fetch
-                and suggests applying
+				<p>
+				Stack Exchange suggests that the error comes from Safari not supporting fetch
+                and suggests applying</p>
                 <pre><code class="language-javascript">
-    import 'whatwg-fetch'; 
+				import 'whatwg-fetch'; 
                 </code></pre>
 
-                to the start of every javascript file using it. Alas, this
+                <p>to the start of every javascript file using it. Alas, this
                 solution did not work for us. Another possible culprit was the countdownTimer.js
-                use of
+                use of</p>
 
                 <pre><code class="language-javascript">
-    String.prototype.padStart()
+				String.prototype.padStart()
                 </code></pre>
 
-                as according to <a
+                <p>as according to <a
                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart">MDN
                 web docs</a> this feauture is not supported in Safari. However,
                 some more bug-testing proved that the countdown timer in fact
-                worked, and the problems was in fact related to <code>fetch</code>
+                worked, and the problems was in fact related to <code>fetch</code></p><br>
 
                 <li>Image placement on the About us page</li>
 
@@ -505,7 +506,8 @@ Stack Exchange suggests that the error comes from Safari not supporting fetch
 
         <section>
             <h2>Self-reflection</h2>
-
+			
+			<p>On the technical side of things, we got experience on how to use GitHub for version control and easier sharing of files. We also learned how to use the folk.ntnu.no domain to upload files and create websites. More than that though, we gained a lot of experience on working on projects in groups and the challenges that arise from having to coordinate with the other group members. Having delegated different pages of the project to different people, confusion sometimes arose regarding who was responsible when an overall change had to be implemented across all of the pages. In addition, documentation wasn't perfect, so it wasn't always clear wheat certain pieces of code did when one group member reviewed another team member's code. This ties in with the biggest lesson, which is the importance of communication. When working on something as intricate and interconnected as a website, it's important that the group is communicating well to make sure everyone is up to date and everything is kept on track. This is an area could do with improvement, and it is certainly something we will carry with us to future projects.</p>
 
         </section>
 
