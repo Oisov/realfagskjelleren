@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+  font-family: Georgia, Palantino, serif;
 }
 
 html, body {
@@ -19,7 +20,33 @@ body {
 	width: 50%;
 }
 
+@font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+    font-style: italic, oblique;
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+
 p {
+    font-family: "Computer Modern", Georgia, Palantino, serif;
+    font-size: 16px;
     text-align: left;
 }
 
