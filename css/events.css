@@ -42,13 +42,28 @@
 
 #noEvent {
   font-size: 20px;
-  margin-top: 0.83em;
-  margin-bottom: 0.83em;
+  /* margin-top: 0.83em; */
+  /* margin-bottom: 0.83em; */
+  margin: 1% 5%;
+}
+
+#noEvent a:link, #noEvent a:link {
+  color: #007FFF;;
+  text-decoration: none;
 }
 
 #noEvent a:link, #noEvent a:visited {
-  color: blue;
-  text-decoration: none;
+    color: #336699;
+    text-decoration: none;
+}
+
+#noEvent a:link, #noEvent a:hover {
+    color: 	orange;
+}
+
+#noEvent a:link, #noEvent a:active {
+    color: white;
+    text-decoration: none;
 }
 
 #nowEvent, #cover, #timer, #nextEvent, #eventDate, #eventTitle, #noEvent {
