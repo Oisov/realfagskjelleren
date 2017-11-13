@@ -15,6 +15,7 @@
 #nav_links li {
   display: inline-block;
 	border-right: 1px solid orange;
+  font-size: 20px;
 }
 
 #nav_links li:last-child {
