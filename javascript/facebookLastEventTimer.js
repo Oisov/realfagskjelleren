@@ -1,3 +1,4 @@
+// Also written by us in its entirety
 fetch(eventUrl).then(function(response) {
     // Convert to JSON
     return response.json();
