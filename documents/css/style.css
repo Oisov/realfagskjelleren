@@ -31,7 +31,8 @@
 
 p {
     font-family: "Computer Modern";
-    font-size: 16px;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 #poly {
@@ -145,4 +146,16 @@ table {
 .organize li {
     margin-left: 20px;
 
+}
+#workload {
+  width: 60%;
+}
+
+.workload {
+  list-style: none;
+  padding-left: 40px;
+}
+
+.names {
+  float: right;
 }
