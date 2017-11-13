@@ -101,8 +101,6 @@ function shuffleItAll2() {
   }
 }
 
-var terninger = [dice1.png, dice2.png, dice3.png, dice4.png, dice5.png, dice6.png];
-
 function nyttKort() {
   document.getElementById("finnToernButton").innerHTML = "Trekk kort";
   if (kortstokk.length > 0) {
