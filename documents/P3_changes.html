@@ -10,7 +10,7 @@ Filename: P3_changes.html
 <head>
   <meta charset="utf-8">
   <title>P3 Changes</title>
-  <link href="./style.css" rel="stylesheet" type="text/css">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="./img/favicon.ico">
 </head>
 
@@ -27,30 +27,45 @@ Filename: P3_changes.html
     <section>
       <h2>Changes from design</h2>
       <p>Through the project, we've worked close to the designs we made in P2. However, some changes has been made </p>
+      <h3>Minor changes</h3>
+      <p>The following changes were made to improve user experience and readability.</p>
+
       <ul>
         <li>Content width 50% instead of 60%</li>
         <li>Replaced mail address in footer with a mail icon</li>
         <li>Reused the footer in mobile/small screen view</li>
         <li>Changed dropdown menu in mobile/small screen view from a horizontal list to a vertical list</li>
-        <li>h1 size 32px down from 40px</li>
+        <li>h1 size 32px down from original 40px</li>
         <li>font-size for body increased from 14px to 16px</li>
         <li>Kept the black background for mobile/small screen view</li>
-        <li>Combined the three javascripts for games into games.js</li>
-        <li>Split events.js into eventMethods.js, facebookEventList and facebookLastEventTimer.js</li>
-        <li>thumbnail.js changed to media.js</li>
-        <li>We did not see a need for javascript in the footer, so footer.js was removed</li>
       </ul>
-      <p>Changes to files and filestructure</p>
-      <ul>
-        <li></li>
-      </ul>
-      <p>Added functionality</p>
+
+      <h3>Structural changes</h3>
+
+      <p>When we wrote the design plans in P2, we underestimated the amount of
+      text we would produce. To maintain readability of code and css, we split
+      the code and css into several files. We used a global css file to style
+      elements in use in several pages. Css changes that only applied to one
+      page, were kept in local css files. Similarily, fetching events was done
+      on two html pages. Therefore, event methods was seperated into one file.</p>
+
+      <li>Combined the three javascripts for games into games.js</li>
+      <li>Split events.js into eventMethods.js, facebookEventList and facebookLastEventTimer.js</li>
+      <li>thumbnail.js changed to media.js</li>
+      <li>Went from a single planned css file to several as the main css file got too full</li>
+      <li>Changed name of contact.html to about.html for better correlation to content</li>
+      <li>Added header.js for modularity</li>
+      <li>Renamed thumbnail.js to media.js</li>
+
+      <h3>Added functionality</h3>
       <ul>
         <li>Added a countdown on main page for next time Realfagskjelleren is open</li>
         <li>Made navbar stick to top when scrolling down page</li>
-        <li>Added Past events in events.html</li>
+        <li>Added list of past events in events.html</li>
+        <li>Added detection for mobile devices so that both small screen sizes and mobile devices triggers design for smaller screens</li>
       </ul>
-      <p>Missing</p>
+      <h3>Missing</h3>
+      <p>Jørgen was supposed to write guestbook.html, but he was unable to do so due to sickness.</p>
       <ul>
         <li>Booking and Lost and Found in about.html</li>
         <li>Gjestebok</li>
@@ -59,7 +74,6 @@ Filename: P3_changes.html
 
 
     <section>
-      <h2>How each of the team members fulfilled their minimum requirements</h2>
       <h2>Workload</h2>
       <ul id="workload">
         <li>Html
@@ -99,21 +113,23 @@ Filename: P3_changes.html
             <li>scroll.js <span class="names">Øistein and Knut</span></li>
           </ul>
         </li>
-        <li>Artwork
-          <ul class="workload">
-            <li>Realfagskjelleren allready had existing artwork that was
-            desireable to use on our site. Most images are therefore taken from
-            Realfagskjelleren, with added transparency</li>            
-          </ul>
-        </li>
       </ul>
+
+      <p>Realfagskjelleren allready had existing artwork that was
+      desireable to use on our site. Most images are therefore taken from
+      Realfagskjelleren, with added transparency.</p>
+
+      <p>Jørgen was somewhat inhibited by illness, but despite this, he was
+      still able to contribute in writing documents, validating the page and
+      adding finishing touches to the page</p>
+
       <h2>Modularity</h2>
 
       <p>All the webpages are built up with the same framework. To avoid
       cluttering of html pages, the footer and header of the pages are removed
       from the html, and added using javascript. footer.js and header.js
       contains the javascript used for this, and the html pages simply includes
-      those scripts</p>
+      those scripts.</p>
 
     </section>
 
