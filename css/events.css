@@ -8,14 +8,14 @@
 #futureEvent>div {
     padding: 10px;
     border-radius: 3px;
-    background: #336699;
+    background: darkorange;
     display: inline-block;
 }
 
 #futureEvent div>span {
     padding: 15px;
-    border-radius: 3px;
-    background: #003366;
+    border-radius: 10px;
+    background: black;
     display: inline-block;
 }
 
