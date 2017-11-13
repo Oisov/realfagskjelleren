@@ -144,6 +144,17 @@ p {
 	display: inline-block;
 	width: 47%;
 }
+
+.left img{
+    width: 100%;
+}
+
+.right p{
+    font-family: "Computer Modern", Georgia, Palantino, serif;
+    font-size: 18px;
+    text-align: left;
+}
+
 /* Content END */
 
 /* Footer START */
