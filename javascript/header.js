@@ -13,7 +13,6 @@ var menuNames = [
   name: "Spill"}
 ];
 var menuOpen = false;
-console.log(window.location);
 var header = document.createElement("div");
 header.id = "header";
 
@@ -37,7 +36,6 @@ navbut.onclick = function (){
       menuOpen = true;
     }
   };
-console.log(navbut);
 
 var logo = document.createElement("img");
 logo.id = "logo";
