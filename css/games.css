@@ -45,6 +45,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 .modalBox {
   -webkit-animation-name: zoom;
@@ -62,11 +63,13 @@
   background-color: rgba(5, 5, 5, 1);
   box-shadow: 10px 10px 20px black;
   border-radius: 20px;
+  margin:auto;
 }
 .modalHeader {
   color: black;
   background-color: orange;
   padding-top: 3%;
+  margin:auto;
 }
 #terningImg {
   display: block;
@@ -78,6 +81,7 @@
   top: 20%;
   height: 70%;
   margin: 1%;
+  margin:auto;
 }
 .modalButton {
   cursor: pointer;
@@ -86,6 +90,7 @@
   height: 10%;
   font-size: 15px;
   margin: 1%;
+  margin:auto;
 }
 .modalClose {
   color: black;
@@ -101,3 +106,8 @@
 .modalClose:hover {
   color: darkorange;
 }
+
+#finnToernModal {
+    width: 50%;
+}
+
